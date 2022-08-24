@@ -1,0 +1,14 @@
+.information-bar {
+    height: 8rem;
+    margin-bottom: 6rem;
+}
+
+.profile-picture {
+    height: 7rem;
+    width: 6,5rem;
+    border-radius: 25px;
+}
+
+.icon-with-text {
+    height: 1rem;
+}
