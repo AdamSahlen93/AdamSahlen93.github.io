@@ -126,5 +126,14 @@ body {
 }
 
 
+.footer {
+    background-color: #381D2A;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
   
