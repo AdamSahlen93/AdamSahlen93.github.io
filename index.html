@@ -8,55 +8,126 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2e51cacbb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="./index.css">
     
 </head>
 
-<body class="">
-    <!-- Header -->
-    <header class="information-bar  d-flex flex-row align-items-center px-3 justify-content-between">
-        <div class="d-flex flex-row align-items-center">
-            <div class="d-flex mr-3 ">
+<body>
+    <!-- Content -->
+    <section class="d-flex w-100 justify-content-center">
+        <div class="d-flex flex-row align-items-center justify-content-around w-75  mt-5">
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
                 <img class="profile-picture" src="./resources/Profilbild.jpg" alt="Profile-Picture">
-            </div>
-            <div class="d-flex flex-column">
-                <div class="d-flex">
-                    <h5 class="d-flex">Adam Sahlén</h4>
+                <div class="d-flex flex-column justify-content-center align-items-center mb-5 pt-4">
+                    <h1 class="d-flex greeting">Adam Sahlén</h1>
+                    <h3 class="d-flex title">Fullstack Javadeveloper</h3>
                 </div>
-                <div class="d-flex flex-row icon-with-text mb-2">
+            </div>
+     
+    
+    <!--         <div class="d-flex container absolute-content">
+                <div class="circle bg-danger c-large ml-5" style="top: -7rem; left: 20rem; z-index: -1;"></div>
+                <div class="circle bg-warning ml-3 c-medium" style="left: 30rem; top: -9rem; z-index: -1;"></div>
+                <div class="circle bg-info ml-3 c-small" style="left: 35rem; top: -10rem; z-index: -2;"></div>
+            </div> -->
+    
+    
+            <div class="d-flex flex-column justify-content-around mt-3 cards">
+    
+                <!-- #1 -->
+                <div class="d-flex card  border-dark mb-4">
+                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <h5>About me</h5>
+                        <a href="stack.html"></a>
+                        <div class="line bg-info"></div>
+                    </div>
+                </div>
+                <!-- #2 -->
+                <div class="d-flex card  border-dark mb-4">
+                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <h5>My Stack</h5>
+                        <a href="stack.html"></a>
+                        <div class="line bg-danger"></div>
+                    </div>
+                </div>
+                <!-- #3 -->
+                <div class="d-flex card  border-dark mb-4">
+                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <h5>Education & Experiences</h5>
+                        <a href="stack.html"></a>
+                        <div class="line bg-warning"></div>
+                    </div>
+                </div>
+                <!-- #4 -->
+                <div class="d-flex card  border-dark">
+                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <h5>Contact information</h5>
+                        <a href="stack.html"></a>
+                        <div class="line bg-success"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!--     <div class="d-flex container absolute-content">
+        <div class="circle bg-danger x-large ml-5" style="left: rem; top: 15rem; z-index: -1;"></div>
+        <div class="circle bg-warning ml-3 c-small" style="left: 5rem; top: 2rem; z-index: -1;"></div>
+        <div class="circle bg-info ml-3 c-medium" style="left: 12rem; top: -3rem; z-index: -1;"></div>
+    </div> -->
+
+    <!-- Footer -->
+    <div class="footer d-flex flex-row align-items-center px-3 justify-content-between text-white">
+        <div class="d-flex flex-row align-items-center">
+            <div class="d-flex mr-3 pl-3 pt-5">
+                
+            </div>
+            <div class="d-flex flex-column pl-3 pt-5">
+                <h5 class="d-flex">Adam Sahlén</h5>
+                <h6 class="d-flex">Fullstack javadeveloper</h6>
+                <div class="d-flex flex-row">
+                    <i class="fa fa-map-marker d-flex mr-1"></i>
+                    <h6 class="d-flex">Lund</h6>
+                </div>
+                
+                <!-- <div class="d-flex flex-row icon-with-text mb-2">
                     <i class="d-flex fa-solid fa-phone mr-1 mt-1 "></i>
                     <p class="d-flex">0705-206547</p>
                 </div>
                 <div class="d-flex flex-row icon-with-text">
                     <i class="fa-solid fa-envelope  mr-1 mt-1 "></i>
                     <p class="d-flex">adam-sahlen@hotmail.com</p>
-                </div>
+                </div> -->
+
             </div>
 
         </div>
-        <div class="d-flex mr-2">
+        <div class="d-flex mr-2 pt-5 pr-3">
             <div class="d-flex mx-2"><i class="fa-brands fa-github fa-2xl"></i></div>
             <div class="d-flex mx-2"><i class="fa-brands fa-square-gitlab fa-2xl"></i></div>
             <div class="d-flex mx-2"><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
             
         </div>
-    </header>
-
-    <!-- Content -->
-    <div class="d-flex flex-column mt-5 align-items-center justify-content-center">
-        <div class="d-flex">
-            <h1>Fullstack Javadeveloper</h1>
-        </div>
-        <div class="d-flex flex-row justify-content-around w-50 mt-3">
-            <div class="d-flex"><a href="">About me</a></div>
-            <div class="d-flex"><a href="">My Stack</a></div>
-            <div class="d-flex"><a href="">Education and Experiences</a></div>
-            <div class="d-flex"><a href="">Contact</a></div>
-        </div>
-
-            
     </div>
+
+
+
+
+ 
+  
+
+
+   
+
     
+    <script src="index.js"></script>
     
 </body>
 
