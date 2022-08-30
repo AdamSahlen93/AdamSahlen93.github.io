@@ -55,6 +55,7 @@ function clickAndSelect() {
 const updateButton1 = document.getElementById('updateDetails1');
 const favDialog1 = document.getElementById('favDialog1');
 
+
 // If a browser doesn't support the dialog, then hide the
 // dialog contents by default.
 if (typeof favDialog1.showModal !== 'function') {
@@ -72,6 +73,7 @@ updateButton1.addEventListener('click', () => {
     outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
   }
 });
+
 
 
 const updateButton2 = document.getElementById('updateDetails2');

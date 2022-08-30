@@ -146,6 +146,18 @@ body {
     background-color: #F39B6D;
 }
 
+#favDialog1 {
+    border-radius: 10px;
+    border-color:#381D2A; 
+    border-width: 2px;
+    box-shadow: 4px 4px 4px #aaa;
+}
+
+.housebutton {
+    border: none;
+}
+
+
 
 
 
