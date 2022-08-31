@@ -39,8 +39,8 @@
 .card {
 box-shadow: 0 3px 10px 0 #aaa;
 cursor: pointer;
-height: 5rem;
-width: 20rem;
+height: 8rem;
+width: 25rem;
 position: relative;
 }
 
@@ -153,8 +153,23 @@ body {
     box-shadow: 4px 4px 4px #aaa;
 }
 
-.housebutton {
-    border: none;
+#favDialog2 {
+    border-radius: 10px;
+    border-color:#381D2A; 
+    border-width: 2px;
+    box-shadow: 4px 4px 4px #aaa;
+}
+
+#favDialog3 {
+    border-radius: 10px;
+    border-color:#381D2A; 
+    border-width: 2px;
+    box-shadow: 4px 4px 4px #aaa;
+}
+
+.x-button {
+    height: 1.5rem;
+
 }
 
 

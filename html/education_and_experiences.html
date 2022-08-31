@@ -15,15 +15,15 @@
 
 <body>
     <nav class="d-flex flex-row justify-content-center mt-5">
-        <a class="d-flex mx-5" href="/index.html">ABOUT ME</a>
-        <a class="d-flex mx-5" href="/html/my_stack.html">MY STACK</a>
-        <a class="d-flex mx-5" >EDUCATION AND EXPERIENCES</a>
+        <a class="d-flex mx-5" href="/index.html">Om mig</a>
+        <a class="d-flex mx-5" href="/html/my_stack.html">Kunskaper</a>
+        <a class="d-flex mx-5" >Utbildning</a>
     </nav>
     <!-- Content -->
-    <section class="d-flex w-100 justify-content-center mt-5">
+    <section class="d-flex flex-row w-100 justify-content-around mt-5 ">
         <div class="d-flex flex-row align-items-center justify-content-around w-75  mt-5">
 
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50">
                 <img class="profile-picture" src="/resources/Profilbild.jpg" alt="Profile-Picture">
                 <div class="d-flex flex-column justify-content-center align-items-center  pt-4">
                     <h1 class="d-flex greeting">Adam Sahlén</h1>
@@ -32,25 +32,25 @@
 
             </div>
 
-            <div class="d-flex flex-column w-50">
-                <h1 class="d-flex">Education and Experiences</h1>
-
-            <div class="d-flex flex-column justify-content-around mt-3 cards ml-3">
+            <div class="d-flex flex-column justify-content-around cards ml-3 w-50">
     
         <!-- #1 -->
-        <div class="d-flex card  border-dark mb-4" id="updateDetails1">
+        <div class="d-flex card border-dark mb-4" id="updateDetails1">
             <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
                 <h5>Javautvecklare</h5>
-                <h6>EC Utbildning</h6>
+                <h6>EC Utbildning - Malmö</h6>
+                <p>365 Yrkeshögskolepoäng</p>
                 <div class="line bg-olive"></div>
             </div>
+
         </div>
         <!-- #2 -->
         <div class="d-flex card  border-dark mb-4" id="updateDetails2">
             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                <h5>My Stack</h5>
+                <h5>Ämneslärarutbildning</h5>
+                <h6>Malmö Universitet</h6>
+                <p>171 Högskolepoäng</p>
                 <div class="line bg-olive"></div>
             </div>
         </div>
@@ -58,7 +58,9 @@
         <div class="d-flex card  border-dark mb-4" id="updateDetails3">
             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                <h5>Education & Experiences</h5>
+                <h5>Biomedicin</h5>
+                <h6>Halmstad Universitet</h6>
+                <p>180 Högskolepoäng</p>
                 <div class="line bg-olive"></div>
             </div>
         </div>
@@ -127,27 +129,66 @@
 
     <div>
         <dialog id="favDialog1">
-            <form method="dialog1">
-                <div class="d-flex flex-row justify-content-between">
-                    <h1>About me</h1>
-                   <button value="cancel1" class="border border-rounded"> <div class="d-flex flex-row"><i class="fa-solid fa-house" ></i><p class="d-flex">Home</p></div></button>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-              </div>
-            </form>
+                <form class="d-flex flex-column "method="dialog1">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h1>Javautvecklare</h1>
+                       <button value="cancel1" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                    </div>
+                    <h5 class="d-flex">
+                        Oktober 2020 – Juni 2022
+                    </h5>
+                    <p class="d-flex">
+                        Fullstackutbildning med fokus på Java och Javascript där följande kurser ingick  
+                    </p>
+                    <h6>Programmering i Java</h6>
+                    <h6>HTML5 och CSS</h6>
+                    <h6>Javascript</h6>
+                    <h6>Avancerad Javaprogrammering</h6>
+                    <h6>Projektkunskap enligt agila metoder</h6>
+                    <h6>Praktisk databasdesign</h6>
+                    <h6>Webbutveckling i Java</h6>
+                    <h6>LIA 1 - Applikationsutveckling</h6>
+                    <h6>Utveckling för Androidplattformar</h6>
+                    <h6>Testdriven utveckling i Java</h6>
+                    <h6>Avancerad Javascript</h6>
+                    <h6>Mjukvaru- och portfolioprojekt</h6>
+                    <h6>Java web-services</h6>
+                    <h6>LIA 2 - Systemutveckling</h6>
+                    <h6>Examensarbete</h6>
+                  </div>
+                </form>
+            </div>
+
           </dialog>
     </div>
 
     <div>
         <dialog id="favDialog2">
             <form method="dialog2">
-                <h1>My stack</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+                <div class="d-flex flex-row justify-content-between">
+                    <h1>Ämneslärarutbildning</h1>
+                   <button value="cancel2" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h5 class="d-flex">
+                    September 2016 – Februari 2020
+                </h5>
+                <p class="d-flex">
+                    Lorem ipsum och kort beskrivning kring utbildningen 
                 </p>
-                <button value="cancel2">Cancel</button>
+                <h6>Matematik och lärande: Att se mönster i matematik</h6>
+                <h6>Verksamhetsförlagd utbildning I</h6>
+                <h6>Sociala relationer, konflikthantering och pedagogiskt ledarskap</h6>
+                <h6>Teknik och lärande: Grundkurs</h6>
+                <h6>Teknik och lärande: Teknik i vår omgivning</h6>
+                <h6>Teknik och lärande: Den moderna tekniken</h6>
+                <h6>Verksamhetsförlagd utbildning II</h6>
+                <h6>Skola, värdegrund och samhälle</h6>
+                <h6>Biologi och lärande: Människan och hälsa</h6>
+                <h6>Verksamhetsförlagd utbildning III</h6>
+                <h6>Biologi och lärande: Genetik och evolution</h6>
+                <h6>Matematik och lärande: Programmering och diskret matematik</h6>
+                <h6>Specialpedagogiska perspektiv på utveckling och lärande</h6>
+                <h6>Självständigt arbete i fördjupningsämnet</h6>
               </div>
             </form>
           </dialog>
@@ -156,20 +197,49 @@
     <div>
         <dialog id="favDialog3">
             <form method="dialog3">
-                <h1>Education & Experiences</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+                <div class="d-flex flex-row justify-content-between">
+                    <h1>Biomedicin</h1>
+                   <button value="cancel3" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h5 class="d-flex">
+                    September 2012 – Maj 2015
+                </h5>
+                <p class="d-flex">
+                    Lorem ipsum och kort beskrivning kring utbildningen 
                 </p>
-                <button value="cancel3">Cancel</button>
+                <h6>Människa och hälsa - en ämnesintroduktion</h6>
+                <h6>Rörelseapparatens anatomi I</h6>
+                <h6>Rörelseapparatens anatomi II</h6>
+                <h6>Nutrition I</h6>
+                <h6>Rörelseapparatens skador och sjukdomar</h6>
+                <h6>Humanfysiologi</h6>
+                <h6>Träningslära I</h6>
+                <h6>Rörelse- och funktionsanalys</h6>
+                <h6>Idrott och fysisk aktivitet för alla</h6>
+                <h6>Pedagogiskt ledarskap och coaching</h6>
+                <h6>Träningslära II</h6>
+                <h6>Tillämpad nutrition</h6>
+                <h6>Biomekanik inom träning</h6>
+                <h6>Idrottsfysiologi</h6>
+                <h6>Ergonomi - grundkurs</h6>
+                <h6>Gym-, idrotts-, tränarpraktik</h6>
+                <h6>Fysiologiska och biomekaniska mätmetoder</h6>
+                <h6>Vetenskapsteori och metod</h6>
+                <h6>Entreprenörskap för hälsobranschen</h6>
+                <h6>Idrottsnutrition</h6>
+                <h6>Funktionshinder: psykologiska och sociala perspektiv</h6>
+                <h6>Examensarbete i biomedicin inriktning fysisk träning</h6>
               </div>
             </form>
           </dialog>
     </div>
 
+   
+
 
 
   
-    <script src="../js/index.js"></script>
+    <script src="../js/global.js"></script>
  
     
 </body>
