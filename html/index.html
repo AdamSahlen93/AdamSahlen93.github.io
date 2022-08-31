@@ -9,23 +9,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2e51cacbb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/css/global.css">
     
 </head>
 
 <body>
-    <div class="placeholder"></div>
+    <nav class="d-flex flex-row justify-content-center mt-5">
+        <a class="d-flex mx-5">ABOUT ME</a>
+        <a class="d-flex mx-5" href="/html/my_stack.html">MY STACK</a>
+        <a class="d-flex mx-5" href="/html/education_and_experiences.html">EDUCATION AND EXPERIENCES</a>
+    </nav>
     <!-- Content -->
     <section class="d-flex w-100 justify-content-center mt-5">
         <div class="d-flex flex-row align-items-center justify-content-around w-75  mt-5">
 
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <img class="profile-picture" src="./resources/Profilbild.jpg" alt="Profile-Picture">
+                <img class="profile-picture" src="/resources/Profilbild.jpg" alt="Profile-Picture">
                 <div class="d-flex flex-column justify-content-center align-items-center  pt-4">
                     <h1 class="d-flex greeting">Adam Sahlén</h1>
                     <h3 class="d-flex title">Fullstack Javadeveloper</h3>
                 </div>
+
             </div>
+
+            <div class="d-flex flex-column w-50">
+                <h1 class="d-flex">About me</h1>
+                <p class="d-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis. Vitae tempus quam pellentesque nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Sagittis aliquam malesuada bibendum arcu. Porttitor lacus luctus accumsan tortor posuere ac. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Vel quam elementum pulvinar etiam non. Facilisi etiam dignissim diam quis enim. Blandit libero volutpat sed cras ornare.</p>
+            </div>
+
+            
      
     
     <!--         <div class="d-flex container absolute-content">
@@ -34,38 +46,7 @@
                 <div class="circle bg-info ml-3 c-small" style="left: 35rem; top: -10rem; z-index: -2;"></div>
             </div> -->
     
-    
-            <div class="d-flex flex-column justify-content-around mt-3 cards">
-    
-                <!-- #1 -->
-                <div class="d-flex card  border-dark mb-4">
-                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                        <h5>About me</h5>
-                        <a href="stack.html"></a>
-                        <div class="line bg-olive"></div>
-                    </div>
-                </div>
-                <!-- #2 -->
-                <div class="d-flex card  border-dark mb-4 text">
-                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                        <h5>My Stack</h5>
-                        <a href="stack.html"></a>
-                        <div class="line bg-olive"></div>
-                    </div>
-                </div>
-                <!-- #3 -->
-                <div class="d-flex card  border-dark mb-4">
-                    <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                        <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                        <h5>Education & Experiences</h5>
-                        <a href="stack.html"></a>
-                        <div class="line bg-olive"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
     
 
@@ -115,18 +96,53 @@
         </div>
     </div>
 
+    <div>
+        <dialog id="favDialog1">
+            <form method="dialog1">
+                <div class="d-flex flex-row justify-content-between">
+                    <h1>About me</h1>
+                   <button value="cancel1" class="border border-rounded"> <div class="d-flex flex-row"><i class="fa-solid fa-house" ></i><p class="d-flex">Home</p></div></button>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+                </p>
+              </div>
+            </form>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog id="favDialog2">
+            <form method="dialog2">
+                <h1>My stack</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+                </p>
+                <button value="cancel2">Cancel</button>
+              </div>
+            </form>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog id="favDialog3">
+            <form method="dialog3">
+                <h1>Education & Experiences</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+                </p>
+                <button value="cancel3">Cancel</button>
+              </div>
+            </form>
+          </dialog>
+    </div>
 
 
 
- 
   
-
-
-   
-
-    
-    <script src="index.js"></script>
+    <script src="../js/index.js"></script>
+ 
     
 </body>
-
+ 
 </html>
