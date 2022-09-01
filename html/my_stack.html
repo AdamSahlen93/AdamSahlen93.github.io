@@ -14,28 +14,25 @@
 </head>
 
 <body>
-    <header>
-        <nav class="d-flex flex-row justify-content-center mt-5 nav-text">
-            <a class="d-flex mx-5 text-decoration-none text-dark" href="/index.html">Om mig</a>
-            <a class="d-flex mx-5 text-decoration-none text-success" >Kunskaper</a>
-            <a class="d-flex mx-5 text-decoration-none text-dark" href="/html/education_and_experiences.html">Utbildning</a>
-        </nav>
-    </header>
+        <!-- HEADER -->
+        <header class="d-flex flex-column justify-content-center align-items-center ">
+            <!-- PICTURE - ME -->
+            <img class="profile-picture d-flex mt-5" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+            <!-- NAVIGATION -->
+            <nav class="d-flex flex-row justify-content-center mt-3 nav-text">
+                <a class="d-flex text-decoration-none text-success mx-3" href="/index.html">Om mig</a>
+                <a class="d-flex text-decoration-none text-dark mx-3">Kunskaper</a>
+                <a class="d-flex text-decoration-none text-dark mx-3" href="/html/education_and_experiences.html">Utbildning</a>
+            </nav>
+        </header>
+
 
     <!-- Content -->
     <section class="d-flex w-100 justify-content-center mt-5">
-        <div class="d-flex flex-row align-items-center justify-content-around w-75  mt-5">
+        <div class="d-flex flex-row align-items-center justify-content-around  mt-5">
 
-            <div class="d-flex flex-column justify-content-center align-items-center w-50">
-                <img class="profile-picture" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-                <div class="d-flex flex-column justify-content-center align-items-center  pt-4">
-                    <h1 class="d-flex greeting">Adam Sahlén</h1>
-                    <h3 class="d-flex">Fullstack Javadeveloper</h3>
-                </div>
-            </div>
-
-            <div class="d-flex w-50">
-                <div class="d-flex flex-column w-50 border border-dark rounded">
+            <div class="d-flex">
+                <div class="d-flex flex-column border border-dark rounded">
                     <div class="d-flex bg-purple text-white justify-content-center"><p class="ml-2 mt-2">Java, Springboot, REST</p></div>
                     <div class="d-flex justify-content-center"><p class="ml-2 mt-2 ">JavaScript, React, Redux, Node</p></div>
                     <div class="d-flex bg-purple text-white justify-content-center"><p class="ml-2 mt-2">Testdriven utveckling, Agila arbetsmetoder</p></div>
@@ -61,92 +58,38 @@
         <div class="circle bg-warning ml-3 c-small" style="left: 5rem; top: 2rem; z-index: -1;"></div>
         <div class="circle bg-info ml-3 c-medium" style="left: 12rem; top: -3rem; z-index: -1;"></div>
     </div> -->
-
-    <!-- Footer -->
-    <div class="footer d-flex flex-row align-items-center px-3 justify-content-between text-white">
-        <div class="d-flex flex-row align-items-center pb-4">
-            <div class="d-flex flex-column pl-3 pt-3">
-                <div class="d-flex flex-row">
-                    <h5 class="d-flex">Contact & Location</h5>
-                </div>
-                <div class="d-flex flex-row">
-                    <i class="fa-solid fa-phone d-flex mr-2"></i>
-                    <h6 class="d-flex">0705-206547</h6>
-                </div>
-                <div class="d-flex flex-row">
-                    <i class="fa-solid fa-envelope d-flex mr-2"></i>
-                    <h6 class="d-flex">adam-sahlen@hotmail.com</h6>
-                </div>
-                <div class="d-flex flex-row">
-                    <i class="fa fa-map-marker d-flex mr-2"></i>
-                    <h6 class="d-flex">Lund, Sweden</h6>
-                </div>
-                
-                <!-- <div class="d-flex flex-row icon-with-text mb-2">
-                    <i class="d-flex fa-solid fa-phone mr-1 mt-1 "></i>
-                    <p class="d-flex">0705-206547</p>
-                </div>
-                <div class="d-flex flex-row icon-with-text">
-                    <i class="fa-solid fa-envelope  mr-1 mt-1 "></i>
-                    <p class="d-flex">adam-sahlen@hotmail.com</p>
-                </div> -->
-
+    <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
+    
+        <div class="d-flex flex-column pt-4 pb-1 pl-2">
+            <div class="d-flex flex-row pb-2">
+                <h6 class="d-flex">Contact & Location</h6>
             </div>
 
+            <div class="d-flex flex-row align-items-center contacts">
+                <i class="fa-solid fa-phone d-flex mr-2 fa-xs mb-3"></i>
+                <p class="d-flex">0705-206547</p>
+            </div>
+            <div class="d-flex flex-row align-items-center contacts">
+                <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
+                <p class="d-fle">Lund, Sweden</p>
+            </div>
+            <div class="d-flex flex-row align-items-center contacts">
+                <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>
+                <p class="d-flex">adam-sahlen@hotmail.com</p>
+            </div>
         </div>
-        <div class="d-flex mr-2 pt-5 pr-3">
-            <div class="d-flex mx-2"><i class="fa-brands fa-github fa-2xl"></i></div>
-            <div class="d-flex mx-2"><i class="fa-brands fa-square-gitlab fa-2xl"></i></div>
-            <div class="d-flex mx-2"><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
+
+
+        <div class="d-flex flex-row">
+            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-github fa-2xl"></i></div>
+            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-square-gitlab fa-2xl"></i></div>
+            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
             
         </div>
-    </div>
-
-    <div>
-        <dialog id="favDialog1">
-            <form method="dialog1">
-                <div class="d-flex flex-row justify-content-between">
-                    <h1>About me</h1>
-                   <button value="cancel1" class="border border-rounded"> <div class="d-flex flex-row"><i class="fa-solid fa-house" ></i><p class="d-flex">Home</p></div></button>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-              </div>
-            </form>
-          </dialog>
-    </div>
-
-    <div>
-        <dialog id="favDialog2">
-            <form method="dialog2">
-                <h1>My stack</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-                <button value="cancel2">Cancel</button>
-              </div>
-            </form>
-          </dialog>
-    </div>
-
-    <div>
-        <dialog id="favDialog3">
-            <form method="dialog3">
-                <h1>Education & Experiences</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-                <button value="cancel3">Cancel</button>
-              </div>
-            </form>
-          </dialog>
-    </div>
-
-
+    </footer>
 
   
-    <script src="../js/index.js"></script>
+    <script src="../js/global.js"></script>
  
     
 </body>
