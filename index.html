@@ -14,27 +14,32 @@
 </head>
 
 <body>
-    <nav class="d-flex flex-row justify-content-center mt-5">
-        <a class="d-flex mx-5">ABOUT ME</a>
-        <a class="d-flex mx-5" href="/html/my_stack.html">MY STACK</a>
-        <a class="d-flex mx-5" href="/html/education_and_experiences.html">EDUCATION AND EXPERIENCES</a>
+    <nav class="d-flex flex-row justify-content-center mt-5 nav-text">
+        <a class="d-flex mx-5 text-decoration-none text-success">Om mig</a>
+        <a class="d-flex mx-5 text-decoration-none text-dark" href="/html/my_stack.html">Kunskaper</a>
+        <a class="d-flex mx-5 text-decoration-none text-dark" href="/html/education_and_experiences.html">Utbildning</a>
     </nav>
     <!-- Content -->
     <section class="d-flex w-100 justify-content-center mt-5">
         <div class="d-flex flex-row align-items-center justify-content-around w-75  mt-5">
 
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center w-50">
                 <img class="profile-picture" src="/resources/Profilbild.jpg" alt="Profile-Picture">
                 <div class="d-flex flex-column justify-content-center align-items-center  pt-4">
                     <h1 class="d-flex greeting">Adam Sahlén</h1>
-                    <h3 class="d-flex title">Fullstack Javadeveloper</h3>
+                    <h3 class="d-flex">Fullstack Javadeveloper</h3>
                 </div>
 
             </div>
 
             <div class="d-flex flex-column w-50">
-                <h1 class="d-flex">About me</h1>
-                <p class="d-flex">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis. Vitae tempus quam pellentesque nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Sagittis aliquam malesuada bibendum arcu. Porttitor lacus luctus accumsan tortor posuere ac. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Vel quam elementum pulvinar etiam non. Facilisi etiam dignissim diam quis enim. Blandit libero volutpat sed cras ornare.</p>
+                <p class="d-flex">
+                    Jag har alltid haft ett stort intresse för kunskap och att utvecklas som person, något som har gjort att jag spenderat mycket tid i skolbänken men det var inte förrän under min lärarutbildning vid Malmö Universitet som jag,
+                    när vi började läsa alltmer programmering (Python), upplevde att jag hittat rätt och tog steget och bytte studieinriktning för att söka en karriär inom programmering, ett beslut jag inte ångrat en sekund utav. 
+                    Via EC Utbildning i Malmö har jag nu slutfört den tvååriga utbildningen ”Javautvecklare” som bäst beskrivs som en fullstackutbildning där fokuset legat på Java och JavaScript men också behandlat databasdesign,  agila arbetsmetoder och Testdriven utveckling. 
+                    Jag har även fått möjligheten att testa på C# under min första praktikperiod, samt fördjupa mina kunskaper som fullstackutvecklare i en verklighetsförankrad kontext under min andra praktikperiod. 
+                    Efter nästan 10 år av eftergymnasiala studier känner jag äntligen att jag har hittat rätt, och jag är nu redo för nya utmaningar! 
+                </p>
             </div>
 
             
@@ -96,51 +101,12 @@
         </div>
     </div>
 
-    <div>
-        <dialog id="favDialog1">
-            <form method="dialog1">
-                <div class="d-flex flex-row justify-content-between">
-                    <h1>About me</h1>
-                   <button value="cancel1" class="border border-rounded"> <div class="d-flex flex-row"><i class="fa-solid fa-house" ></i><p class="d-flex">Home</p></div></button>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-              </div>
-            </form>
-          </dialog>
-    </div>
-
-    <div>
-        <dialog id="favDialog2">
-            <form method="dialog2">
-                <h1>My stack</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-                <button value="cancel2">Cancel</button>
-              </div>
-            </form>
-          </dialog>
-    </div>
-
-    <div>
-        <dialog id="favDialog3">
-            <form method="dialog3">
-                <h1>Education & Experiences</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Egestas dui id ornare arcu odio ut. Neque aliquam vestibulum morbi blandit cursus risus at. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
-                </p>
-                <button value="cancel3">Cancel</button>
-              </div>
-            </form>
-          </dialog>
-    </div>
+   
 
 
 
   
-    <script src="../js/index.js"></script>
+    <script src="../js/global.js"></script>
  
     
 </body>
