@@ -7,21 +7,24 @@
 
 .greeting {
     font-family: 'Tangerine', serif;
-    font-size: 4rem;
+    font-size: 2rem;
     text-shadow: 4px 4px 4px #aaa;
 }
 
 .profile-picture {
-    height: 8rem;
-    width: 8rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 100%;
 }
 
 .title {
     font-family: 'Tangerine', serif;
-    font-size: 50px;
+    font-size: 1.5rem;
     text-shadow: 4px 4px 4px #aaa;
+    margin-top: -1rem;
 }
+
+
 
 .nav-text{
     font-family: 'Tangerine', serif;
@@ -38,7 +41,6 @@
 
 
 
-
 .icon-with-text {
     height: 1rem;
 }
@@ -52,10 +54,18 @@
 .card {
 box-shadow: 0 3px 10px 0 #aaa;
 cursor: pointer;
-height: 8rem;
-width: 25rem;
+height: 7rem;
+width: 20rem;
 position: relative;
+
 }
+
+.card-body {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.5rem;  
+}
+
 
 .card h2 {
 font-size: 20px;
@@ -157,6 +167,10 @@ body {
     background-color: #AABD8C;
 }
 
+.text-olive {
+    color: #AABD8C !important;
+}
+
 .bg-purple {
     background-color: #381D2A;
 }
@@ -201,9 +215,55 @@ body {
     border-color:#381D2A;
 }
 
-
-
-
-
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    z-index: 1;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 6.5rem;
+    left: 0;
+    background-color: rgb(56,29,42);
+    background-color: rgba(56,29,42,0.95);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
 
   
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
