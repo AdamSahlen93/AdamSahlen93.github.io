@@ -5,15 +5,22 @@
     height: 60px;
 }
 
+
 .greeting {
     font-family: 'Tangerine', serif;
     font-size: 2rem;
     text-shadow: 4px 4px 4px #aaa;
 }
 
-.profile-picture {
+.profile-picture-phone {
     height: 5rem;
     width: 5rem;
+    border-radius: 100%;
+}
+
+.profile-picture-pc {
+    height: 10rem;
+    width: 10rem;
     border-radius: 100%;
 }
 
@@ -86,16 +93,23 @@ box-shadow: 0 3px 10px 2px #444;
     
 }
 }
+*/
 
-@media (max-width: 768px) {
-.cards {
-    display: block;
-    width: 100vw;
+
+@media screen and (min-width: 768px) {
+    .profile-picture-phone {
+        display: none !important;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .profile-picture-pc {
+        display: none !important;
+    }
+    
 }
-.card {
-    margin: 0 auto 2rem;
-}
-} */
+
+
 
 .main-circle {
     position: absolute;
@@ -152,6 +166,11 @@ box-shadow: 0 3px 10px 2px #444;
 
 body {
     background-color: #EFE6DD;
+
+}
+
+.scroll {
+    height: 100vh !important;
 }
 
 
@@ -213,6 +232,7 @@ body {
 .box{
     box-shadow: 4px 4px 4px #aaa;
     border-color:#381D2A;
+   
 }
 
 /* Style the navigation menu */
@@ -260,10 +280,5 @@ body {
   @media screen and (max-height: 450px) {
     .overlay {overflow-y: auto;}
     .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
   }
 
