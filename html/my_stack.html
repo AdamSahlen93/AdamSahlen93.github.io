@@ -15,114 +15,101 @@
 
 <body>
 
-    <header class="d-flex flex-row justify-content-between">
-
-        <div class="d-flex flex-row mt-3 ml-2">
+    <!-- HEADER PHONE -->
+    <header class="justify-content-between header-phone ">
+        <div class="d-flex flex-row mt-3 ml-2" >
             <img class="profile-picture-phone d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
             <div class="d-flex flex-column justify-content-end ml-2 ">
                 <h6 class="greeting">Adam Sahlén</h6>
                 <h6 class="title">Fullstack Javautvecklare</h6>
             </div>
         </div>
-        
-        <!-- The overlay -->
         <div id="myNav" class="overlay">
-
-       
-            <!-- Overlay content -->
             <div class="overlay-content">
                 <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/index.html">Om mig</a>
                 <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end">Kunskaper</a>
                 <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/education_and_experiences.html">Utbildning</a>
             </div>
-        
         </div>
-        
         <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
+    </header>
 
+    <!-- HEADER PC-->
+    <header class="justify-content-center align-items-center header-pc">
+       
+        <img class="profile-picture-pc d-flex mt-5" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+      
+        <nav class="d-flex flex-row justify-content-center mt-3 nav-text">
+            <a class="d-flex text-decoration-none text-dark mx-3" href="/index.html">Om mig</a>
+            <a class="d-flex text-decoration-none text-olive mx-3">Kunskaper</a>
+            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/education_and_experiences.html">Utbildning</a>
+        </nav>
     </header>
 
     <section class="scroll">
-        <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-
-        <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
-            <div class="d-flex flex-column mx-2 w-100 pt-2"> 
-                <h5 class="d-flex">Backend</h5> 
-                <p class="d-flex">
-                    Java, Springboot, REST
-                </p >
-                <div class="xl-line bg-olive mb-2"></div> 
+        <div class="stack-container d-flex flex-column">
+            <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
+                <div class="d-flex flex-column mx-2 w-100 pt-2"> 
+                    <h5 class="d-flex">Backend</h5> 
+                    <p class="d-flex">
+                        Java, Springboot, REST
+                    </p >
+                    <div class="xl-line bg-olive mb-2"></div> 
+                </div>
             </div>
-        </div>
-        <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
-            <div class="d-flex flex-column mx-2 w-100  pt-2"> 
-                <h5 class="d-flex">Frontend</h5> 
-                <p class="d-flex ">
-                    JavaScript, React, Redux
-                </p>
-                <div class="xl-line bg-olive mb-2"></div> 
+            <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
+                <div class="d-flex flex-column mx-2 w-100  pt-2"> 
+                    <h5 class="d-flex">Frontend</h5> 
+                    <p class="d-flex ">
+                        JavaScript, React, Redux
+                    </p>
+                    <div class="xl-line bg-olive mb-2"></div> 
+                </div>
             </div>
-        </div>
-        <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white ">
-            <div class="d-flex flex-column mx-2 w-100  pt-2"> 
-                <h5 class="d-flex">Övrigt</h5> 
-                <p class="d-flex ">
-                    Testdriven utveckling, Agila arbetsmetoder
-                </p>
-                <div class="xl-line bg-olive mb-2"></div> 
+            <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white ">
+                <div class="d-flex flex-column mx-2 w-100  pt-2"> 
+                    <h5 class="d-flex">Övrigt</h5> 
+                    <p class="d-flex ">
+                        Testdriven utveckling, Agila arbetsmetoder
+                    </p>
+                    <div class="xl-line bg-olive mb-2"></div> 
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <!-- <section class="d-flex w-100 justify-content-center mt-5">
-        <div class="d-flex flex-row align-items-center justify-content-around  mt-5">
 
-            <div class="d-flex">
-                <div class="d-flex flex-column border border-dark rounded">
-                    <div class="d-flex bg-purple text-white justify-content-center"><p class="ml-2 mt-2">Java, Springboot, REST</p></div>
-                    <div class="d-flex justify-content-center"><p class="ml-2 mt-2 ">JavaScript, React, Redux, Node</p></div>
-                    <div class="d-flex bg-purple text-white justify-content-center"><p class="ml-2 mt-2">Testdriven utveckling, Agila arbetsmetoder</p></div>
-                </div>
-            </div>
-    </section> -->
-    
+   <!-- Footer -->
+   <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
 
-<!--     <div class="d-flex container absolute-content">
-        <div class="circle bg-danger x-large ml-5" style="left: rem; top: 15rem; z-index: -1;"></div>
-        <div class="circle bg-warning ml-3 c-small" style="left: 5rem; top: 2rem; z-index: -1;"></div>
-        <div class="circle bg-info ml-3 c-medium" style="left: 12rem; top: -3rem; z-index: -1;"></div>
-    </div> -->
-    <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
-    
-        <div class="d-flex flex-column pt-4 pb-1 pl-2">
-            <div class="d-flex flex-row pb-2">
-                <h6 class="d-flex">Contact & Location</h6>
-            </div>
-
-            <div class="d-flex flex-row align-items-center contacts">
-                <i class="fa-solid fa-phone d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-flex">0705-206547</p>
-            </div>
-            <div class="d-flex flex-row align-items-center contacts">
-                <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-fle">Lund, Sweden</p>
-            </div>
-            <div class="d-flex flex-row align-items-center contacts">
-                <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-flex">adam-sahlen@hotmail.com</p>
-            </div>
+    <div class="d-flex flex-column pt-3 pb-1 pl-2 contacts-container">
+        <div class="d-flex flex-row pb-2">
+            <h6 class="d-flex">Contact & Location</h6>
         </div>
 
-
-        <div class="d-flex flex-row">
-            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-github fa-2xl"></i></div>
-            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-square-gitlab fa-2xl"></i></div>
-            <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
-            
+        <div class="d-flex flex-row align-items-center contacts">
+            <i class="fa-solid fa-phone d-flex mr-2 fa-xs mb-3"></i>
+            <p class="d-flex">0705-206547</p>
         </div>
-    </footer>
+        <div class="d-flex flex-row align-items-center contacts">
+            <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
+            <p class="d-fle">Lund, Sweden</p>
+        </div>
+        <div class="d-flex flex-row align-items-center contacts">
+            <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>
+            <p class="d-flex">adam-sahlen@hotmail.com</p>
+        </div>
+    </div>
 
+
+    <div class="d-flex flex-row">
+        <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-github fa-2xl"></i></div>
+        <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-square-gitlab fa-2xl"></i></div>
+        <div class="d-flex mx-2 align-items-end mb-4 pb-2"><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
+        
+    </div>
+
+</footer>
   
     <script src="../js/global.js"></script>
  

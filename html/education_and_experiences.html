@@ -15,97 +15,82 @@
 
 <body>
 
-    <header class="d-flex flex-row justify-content-between">
-
-        <div class="d-flex flex-row mt-3 ml-2">
+    <!-- HEADER PHONE -->
+    <header class="justify-content-between header-phone ">
+        <div class="d-flex flex-row mt-3 ml-2" >
             <img class="profile-picture-phone d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
             <div class="d-flex flex-column justify-content-end ml-2 ">
                 <h6 class="greeting">Adam Sahlén</h6>
                 <h6 class="title">Fullstack Javautvecklare</h6>
             </div>
         </div>
-        
-        <!-- The overlay -->
         <div id="myNav" class="overlay">
-
-       
-            <!-- Overlay content -->
             <div class="overlay-content">
                 <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/index.html">Om mig</a>
                 <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/my_stack.html">Kunskaper</a>
                 <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end">Utbildning</a>
             </div>
-        
         </div>
-        
         <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
-
     </header>
 
-    <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+    <!-- HEADER PC-->
+    <header class="justify-content-center align-items-center header-pc">
+       
+        <img class="profile-picture-pc d-flex mt-5" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+      
+        <nav class="d-flex flex-row justify-content-center mt-3 nav-text">
+            <a class="d-flex text-decoration-none text-dark mx-3" href="/index.html">Om mig</a>
+            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/my_stack.html">Kunskaper</a>
+            <a class="d-flex text-decoration-none text-olive mx-3">Utbildning</a>
+        </nav>
+    </header>
 
     <!-- Content -->
     <section class="d-flex flex-row w-100 justify-content-center scroll mt-4">
   
 
-        <div class="d-flex flex-column cards ">
-    
-        <!-- #1 -->
-        <div class="d-flex card border-dark mb-4" id="updateDetails1">
-            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                <h5>Javautvecklare</h5>
-                <h6>EC Utbildning - Malmö</h6>
-                <p>365 Yrkeshögskolepoäng</p>
-                <div class="line bg-olive"></div>
-            </div>
+    <div class="d-flex flex-column cards ">
+        
+            <!-- #1 -->
+            <div class="d-flex card border-dark mb-4" id="updateDetails1">
+                <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                    <h5>Javautvecklare</h5>
+                    <h6>EC Utbildning - Malmö</h6>
+                    <p>365 Yrkeshögskolepoäng</p>
+                    <div class="line bg-olive"></div>
+                </div>
 
-        </div>
-        <!-- #2 -->
-        <div class="d-flex card  border-dark mb-4" id="updateDetails2">
-            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                <h5>Ämneslärarutbildning</h5>
-                <h6>Malmö Universitet</h6>
-                <p>171 Högskolepoäng</p>
-                <div class="line bg-olive"></div>
+            </div>
+            <!-- #2 -->
+            <div class="d-flex card  border-dark mb-4" id="updateDetails2">
+                <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                    <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                    <h5>Ämneslärarutbildning</h5>
+                    <h6>Malmö Universitet</h6>
+                    <p>171 Högskolepoäng</p>
+                    <div class="line bg-olive"></div>
+                </div>
+            </div>
+            <!-- #3 -->
+            <div class="d-flex card  border-dark mb-4" id="updateDetails3">
+                <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                    <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                    <h5>Biomedicin</h5>
+                    <h6>Halmstad Universitet</h6>
+                    <p>180 Högskolepoäng</p>
+                    <div class="line bg-olive"></div>
+                </div>
             </div>
         </div>
-        <!-- #3 -->
-        <div class="d-flex card  border-dark mb-4" id="updateDetails3">
-            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                <h5>Biomedicin</h5>
-                <h6>Halmstad Universitet</h6>
-                <p>180 Högskolepoäng</p>
-                <div class="line bg-olive"></div>
-            </div>
-        </div>
-
-</div>
-            </div>
-
-            
-     
-    
-    <!--         <div class="d-flex container absolute-content">
-                <div class="circle bg-danger c-large ml-5" style="top: -7rem; left: 20rem; z-index: -1;"></div>
-                <div class="circle bg-warning ml-3 c-medium" style="left: 30rem; top: -9rem; z-index: -1;"></div>
-                <div class="circle bg-info ml-3 c-small" style="left: 35rem; top: -10rem; z-index: -2;"></div>
-            </div> -->
-    
+    </div>
 
     </section>
     
+     <!-- Footer -->
+     <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
 
-<!--     <div class="d-flex container absolute-content">
-        <div class="circle bg-danger x-large ml-5" style="left: rem; top: 15rem; z-index: -1;"></div>
-        <div class="circle bg-warning ml-3 c-small" style="left: 5rem; top: 2rem; z-index: -1;"></div>
-        <div class="circle bg-info ml-3 c-medium" style="left: 12rem; top: -3rem; z-index: -1;"></div>
-    </div> -->
-
-    <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
-    
-        <div class="d-flex flex-column pt-4 pb-1 pl-2">
+        <div class="d-flex flex-column pt-3 pb-1 pl-2 contacts-container">
             <div class="d-flex flex-row pb-2">
                 <h6 class="d-flex">Contact & Location</h6>
             </div>
@@ -133,6 +118,7 @@
         </div>
 
     </footer>
+
 
     <div>
         <dialog class="w-100" id="favDialog1">
