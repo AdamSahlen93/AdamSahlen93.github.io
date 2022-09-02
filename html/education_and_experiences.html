@@ -15,17 +15,31 @@
 
 <body>
 
-    
-    <!-- HEADER -->
-    <header class="d-flex flex-column justify-content-center align-items-center ">
-        <!-- PICTURE - ME -->
-        <img class="profile-picture d-flex mt-5" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-        <!-- NAVIGATION -->
-        <nav class="d-flex flex-row justify-content-center mt-3 nav-text">
-            <a class="d-flex text-decoration-none text-success mx-3" href="/index.html">Om mig</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/my_stack.html">Kunskaper</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" >Utbildning</a>
-        </nav>
+    <header class="d-flex flex-row justify-content-between">
+
+        <div class="d-flex flex-row mt-3 ml-2">
+            <img class="profile-picture d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+            <div class="d-flex flex-column justify-content-end ml-2 ">
+                <h6 class="greeting">Adam Sahlén</h6>
+                <h6 class="title">Fullstack Javautvecklare</h6>
+            </div>
+        </div>
+        
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+       
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/index.html">Om mig</a>
+                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/my_stack.html">Kunskaper</a>
+                <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end">Utbildning</a>
+            </div>
+        
+        </div>
+        
+        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
+
     </header>
 
     <!-- Content -->
@@ -119,15 +133,15 @@
     </footer>
 
     <div>
-        <dialog class="w-50" id="favDialog1">
+        <dialog class="w-100" id="favDialog1">
                 <form class="d-flex flex-column "method="dialog1">
                     <div class="d-flex flex-row justify-content-between">
-                        <h1>Javautvecklare</h1>
+                        <h5>Javautvecklare</h5>
                        <button value="cancel1" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                     </div>
-                    <h5 class="d-flex">
+                    <h6 class="d-flex">
                         Oktober 2020 – Juni 2022
-                    </h5>
+                    </h6>
                     <div class="xl-line bg-olive"></div>
                     <p class="d-flex">
                         Fullstackutbildning med fokus på Java och Javascript där följande kurser ingick  
@@ -155,15 +169,15 @@
     </div>
 
     <div>
-        <dialog class="w-50" id="favDialog2">
+        <dialog class="w-100" id="favDialog2">
             <form method="dialog2">
                 <div class="d-flex flex-row justify-content-between">
-                    <h1>Ämneslärarutbildning</h1>
+                    <h5>Ämneslärarutbildning</h5>
                    <button value="cancel2" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
-                <h5 class="d-flex">
+                <h6 class="d-flex">
                     September 2016 – Februari 2020
-                </h5>
+                </h6>
                 <div class="xl-line bg-olive"></div>
                 <p class="d-flex">
                     Utbildning för skolans årskurs 7-9 med ämnena matematik, teknik och biologi
@@ -188,15 +202,15 @@
     </div>
 
     <div>
-        <dialog class="w-50" id="favDialog3">
+        <dialog class="w-100" id="favDialog3">
             <form method="dialog3">
                 <div class="d-flex flex-row justify-content-between">
-                    <h1>Biomedicin</h1>
+                    <h5>Biomedicin</h5>
                    <button value="cancel3" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
-                <h5 class="d-flex">
+                <h6 class="d-flex">
                     September 2012 – Maj 2015
-                </h5>
+                </h6>
                 <div class="xl-line bg-olive"></div>
                 <p class="d-flex">
                     Kandidatexamen med inriktning fysisk träning där allt från anatomi och fysiologi till entreprenörskap ingick
