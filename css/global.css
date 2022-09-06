@@ -6,23 +6,38 @@
     }
     .card {
         margin-left: 1rem !important;
-        margin-right: 1rem !important;
-    }
-    .scroll {
-        flex-direction: row !important;
+        margin-right: 1rem !important; 
+        height: 10rem !important;
+        width: 24rem !important;
     }
     .box {
         margin-left: 1rem !important;
         margin-right: 1rem !important; 
+        height: 10rem;
         width: 20rem;
     }
     .stack-container {
         flex-direction: row !important;
         justify-content: center;
     }
-    .header-pc {
-        margin-top: 5rem;
+    .stack-box {
+        justify-content: center !important;
+        align-items: center !important;
     }
+    .header-pc {
+        margin-top: 3rem;
+    }
+    .course-bottom-line {
+        width: 20rem !important;
+    } 
+    
+
+}
+
+@media screen and (max-width: 1000px) {
+    .card-with-icon {
+        display: none !important;
+    } 
 }
 
 
@@ -30,13 +45,19 @@
     .header-phone {
         display: none !important;
     } 
+    .header-pc {
+        margin-top: 3rem;
+    }
+    .about-container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 } 
 
 @media screen and (max-width: 768px) {
     .header-pc {
         display: none !important;
     } 
-
     .profile-picture-pc{
         display: none !important;
     }
@@ -59,6 +80,7 @@
 
 }
 
+
 .header-phone {
     display: flex;
     flex-direction: row;
@@ -77,8 +99,8 @@
 }
 
 .profile-picture-pc {
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 100%;
 }
 
@@ -148,15 +170,8 @@
 box-shadow: 0 3px 10px 0 #aaa;
 cursor: pointer;
 height: 7rem;
-width: 20rem;
-position: relative;
+width: 15rem;
 
-}
-
-.card-body {
-    position: absolute;
-    top: -0.75rem;
-    left: 1.5rem;  
 }
 
 
@@ -300,4 +315,10 @@ body {
     .overlay {overflow-y: auto;}
     .overlay a {font-size: 20px}
   }
+
+.laptop-container{
+    height: 7rem;
+    width: 8rem;
+    border-radius: 25%;
+}
 
