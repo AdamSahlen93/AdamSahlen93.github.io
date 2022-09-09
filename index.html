@@ -12,7 +12,8 @@
     <script src="https://kit.fontawesome.com/2e51cacbb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/stack_card.css">
+    <link rel="stylesheet" href="/css/education_card.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/stack.css">
     <link rel="icon" class="fa-solid fa-house">
@@ -22,7 +23,7 @@
 <body>
 
      <!-- HEADER PHONE -->
-     <header class="justify-content-between header-phone ">
+     <header class="justify-content-between header-phone">
         <div class="d-flex flex-row mt-3 ml-2" >
             <a onclick="showText1()" class="nav-pointer"><img class="profile-picture-phone d-flex" src="/resources/Profilbild.jpg"   alt="Profile-Picture"></a>
             <div class="d-flex flex-column justify-content-end ml-2 bg-warning ">
@@ -32,9 +33,9 @@
         </div>
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end nav-pointer" onclick="showText2()">Om mig</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end nav-pointer" onclick="showText3()">Kunskaper</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end nav-pointer" onclick="showText4()">Utbildning</a>
+                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 justify-content-end nav-pointer" onclick="showText2()">Om mig</a>
+                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3 justify-content-end nav-pointer" onclick="showText3()">Kunskaper</a>
+                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 justify-content-end nav-pointer" onclick="showText4()">Utbildning</a>
             </div>
         </div>
         <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
@@ -43,16 +44,16 @@
       <!-- HEADER PC-->
     <header class="header-pc">
         <nav class="d-flex flex-row justify-content-center nav-text">
-            <a onclick="showText1()"><i class="fa-solid fa-house fa-xs text-decoration-none text-olive mx-3 nav-pointer"></i></a>
-            <a class="d-flex text-decoration-none text-dark mx-3 nav-pointer" onclick="showText2()">Om mig</a>
-            <a class="d-flex text-decoration-none text-dark mx-3 nav-pointer" onclick="showText3()">Kunskaper</a>
-            <a class="d-flex text-decoration-none text-dark mx-3 nav-pointer" onclick="showText4()">Utbildning</a>
+            <div><i id="home_button" class="fa-solid fa-house fa-xs text-decoration-none mx-3 nav-pointer" onclick="showText1()"></i></div>
+            <a id="about_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText2()">Om mig</a>
+            <a id="stack_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText3()">Kunskaper</a>
+            <a id="education_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText4()">Utbildning</a>
         </nav>
     </header>
    
 
     <!-- MAIN CONTENT -->
-    <div class="d-flex flex-column justify-content-center align-items-center bg-info">
+    <div class="d-flex flex-column justify-content-center align-items-center">
 
         <!--HOME-->
         <div id="home">
@@ -133,7 +134,7 @@
                 <div class="d-flex flex-column cards mx-5 justify-content-center">
                     
                         <!-- #1 -->
-                        <div class="d-flex card justify-content-center pt-2 border-dark mb-4" id="java-card">
+                        <div onclick="openJavaDialog()" class="d-flex justify-content-center pt-2 border-dark rounded bg-white border mb-4 nav-pointer" >
                             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
                                 <h5>Javautvecklare</h5>
@@ -143,7 +144,7 @@
                             </div>
                         </div>
                         <!-- #2 -->
-                        <div class="d-flex card justify-content-center pt-2 border-dark mb-4" id="teacher-card">
+                        <div onclick="openTeacherDialog()" class="d-flex justify-content-center pt-2 border-dark mb-4" id="teacher-card">
                             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
                                 <h5>Ämneslärarutbildning</h5>
@@ -153,7 +154,7 @@
                             </div>
                         </div>
                         <!-- #3 -->
-                        <div class="d-flex card  border-dark justify-content-center pt-2 mb-4" id="biomedicin-card">
+                        <div onclick="openBiomedicineDialog()" class="d-flex  border-dark justify-content-center pt-2 mb-4" id="biomedicin-card">
                             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
                                 <h5>Biomedicin</h5>
@@ -209,10 +210,10 @@
 
     <div>
         <dialog class="w-100" id="java-dialog">
-                <form class="d-flex flex-column "method="dialog1">
+                
                     <div class="d-flex flex-row justify-content-between">
                         <h5>Javautvecklare</h5>
-                       <button value="cancel1" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                       <button onclick="closeJavaDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                     </div>
                     <h6 class="d-flex">
                         Oktober 2020 – Juni 2022
@@ -238,17 +239,16 @@
                     <h6>Examensarbete</h6>
 
                   </div>
-                </form>
+             
             </div>
           </dialog>
     </div>
 
     <div>
         <dialog class="w-100" id="teacher-dialog">
-            <form method="dialog2">
                 <div class="d-flex flex-row justify-content-between">
                     <h5>Ämneslärarutbildning</h5>
-                   <button value="cancel2" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                   <button onclick="closeTeacherDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
                 <h6 class="d-flex">
                     September 2016 – Februari 2020
@@ -272,16 +272,14 @@
                 <h6>Specialpedagogiska perspektiv på utveckling och lärande</h6>
                 <h6>Självständigt arbete i fördjupningsämnet</h6>
               </div>
-            </form>
           </dialog>
     </div>
 
     <div>
-        <dialog class="w-100" id="biomedicin-dialog">
-            <form method="dialog3">
+        <dialog class="w-100" id="biomedicine-dialog">
                 <div class="d-flex flex-row justify-content-between">
                     <h5>Biomedicin</h5>
-                   <button value="cancel3" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                   <button onclick="closeBiomedicineDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
                 <h6 class="d-flex">
                     September 2012 – Maj 2015
@@ -313,7 +311,6 @@
                 <h6>Funktionshinder: psykologiska och sociala perspektiv</h6>
                 <h6>Examensarbete i biomedicin inriktning fysisk träning</h6>
               </div>
-            </form>
           </dialog>
     </div>
 
@@ -323,7 +320,6 @@
 
     <script src="./js/DOM.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="./js/card.js"></script>
     <script src="./js/dialog.js"></script>
  
     

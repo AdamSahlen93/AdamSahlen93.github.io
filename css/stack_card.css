@@ -1,0 +1,53 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.card {
+box-shadow: 0 3px 10px 0 #aaa;
+cursor: pointer;
+height: 7rem;
+width: 90vw;
+
+}
+
+.card h2 {
+font-size: 20px;
+font-weight: bold;
+}
+
+.card.visited {
+box-shadow: 0 3px 10px 2px #444;
+}
+
+#java-dialog {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+#teacher-dialog {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+#biomedicine-dialog {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+@media screen and (min-width: 1000px) {
+    .cards {
+        flex-direction: row !important;
+        margin-top: 15vh !important;
+    }
+    .card {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important; 
+        height: 10rem !important;
+        width: 24rem !important;
+    }
+}

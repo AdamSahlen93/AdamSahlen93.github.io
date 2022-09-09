@@ -183,10 +183,8 @@
     height: 0.5rem;
 }
 
-
 body {
     background-color: #EFE6DD;
-
 }
 
 .scroll {
@@ -222,23 +220,7 @@ body {
     background-color: #F39B6D;
 }
 
-#favDialog1 {
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px #aaa;
-}
 
-#favDialog2 {
-    border-radius: 10px;
-    border: 0;
-    box-shadow: 1px 1px 1px #aaa;
-}
-
-#favDialog3 {
-    border-radius: 10px;
-    border: 0;
-    box-shadow: 1px 1px 1px #aaa;
-}
 
 .x-button {
     height: 1.5rem;
