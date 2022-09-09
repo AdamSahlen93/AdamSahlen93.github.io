@@ -17,6 +17,25 @@
 
 <body>
 
+     <!-- HEADER PHONE -->
+     <header class="justify-content-between header-phone ">
+        <div class="d-flex flex-row mt-3 ml-2" >
+            <a onclick="showText1()"><img class="profile-picture-phone d-flex" src="/resources/Profilbild.jpg"   alt="Profile-Picture"></a>
+            <div class="d-flex flex-column justify-content-end ml-2 ">
+                <h6 class="greeting">Adam Sahlén</h6>
+                <h6 class="title">Fullstack Javautvecklare</h6>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end " onclick="showText2()">Om mig</a>
+                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" onclick="showText3()">Kunskaper</a>
+                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" onclick="showText4()">Utbildning</a>
+            </div>
+        </div>
+        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
+    </header>
+
       <!-- HEADER PC-->
     <header class="header-pc">
         <nav class="d-flex flex-row justify-content-center nav-text">
@@ -184,12 +203,124 @@
 
     </footer>
 
+    <div>
+        <dialog class="w-100" id="favDialog1">
+                <form class="d-flex flex-column "method="dialog1">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h5>Javautvecklare</h5>
+                       <button value="cancel1" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                    </div>
+                    <h6 class="d-flex">
+                        Oktober 2020 – Juni 2022
+                    </h6>
+                    <div class="xl-line bg-olive"></div>
+                    <p class="d-flex">
+                        Fullstackutbildning med fokus på Java och Javascript där följande kurser ingick  
+                    </p>
+                    <h6>Programmering i Java</h6>
+                    <h6>HTML5 och CSS</h6>
+                    <h6>Javascript</h6>
+                    <h6>Avancerad Javaprogrammering</h6>
+                    <h6>Projektkunskap enligt agila metoder</h6>
+                    <h6>Praktisk databasdesign</h6>
+                    <h6>Webbutveckling i Java</h6>
+                    <h6>LIA 1 - Applikationsutveckling</h6>
+                    <h6>Utveckling för Androidplattformar</h6>
+                    <h6>Testdriven utveckling i Java</h6>
+                    <h6>Avancerad Javascript</h6>
+                    <h6>Mjukvaru- och portfolioprojekt</h6>
+                    <h6>Java web-services</h6>
+                    <h6>LIA 2 - Systemutveckling</h6>
+                    <h6>Examensarbete</h6>
+
+                  </div>
+                </form>
+            </div>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog class="w-100" id="favDialog2">
+            <form method="dialog2">
+                <div class="d-flex flex-row justify-content-between">
+                    <h5>Ämneslärarutbildning</h5>
+                   <button value="cancel2" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h6 class="d-flex">
+                    September 2016 – Februari 2020
+                </h6>
+                <div class="xl-line bg-olive"></div>
+                <p class="d-flex">
+                    Utbildning för skolans årskurs 7-9 med ämnena matematik, teknik och biologi
+                </p>
+                <h6>Matematik och lärande: Att se mönster i matematik</h6>
+                <h6>Verksamhetsförlagd utbildning I</h6>
+                <h6>Sociala relationer, konflikthantering och pedagogiskt ledarskap</h6>
+                <h6>Teknik och lärande: Grundkurs</h6>
+                <h6>Teknik och lärande: Teknik i vår omgivning</h6>
+                <h6>Teknik och lärande: Den moderna tekniken</h6>
+                <h6>Verksamhetsförlagd utbildning II</h6>
+                <h6>Skola, värdegrund och samhälle</h6>
+                <h6>Biologi och lärande: Människan och hälsa</h6>
+                <h6>Verksamhetsförlagd utbildning III</h6>
+                <h6>Biologi och lärande: Genetik och evolution</h6>
+                <h6>Matematik och lärande: Programmering och diskret matematik</h6>
+                <h6>Specialpedagogiska perspektiv på utveckling och lärande</h6>
+                <h6>Självständigt arbete i fördjupningsämnet</h6>
+              </div>
+            </form>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog class="w-100" id="favDialog3">
+            <form method="dialog3">
+                <div class="d-flex flex-row justify-content-between">
+                    <h5>Biomedicin</h5>
+                   <button value="cancel3" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h6 class="d-flex">
+                    September 2012 – Maj 2015
+                </h6>
+                <div class="xl-line bg-olive"></div>
+                <p class="d-flex">
+                    Kandidatexamen med inriktning fysisk träning där allt från anatomi och fysiologi till entreprenörskap ingick
+                </p>
+                <h6>Människa och hälsa - en ämnesintroduktion</h6>
+                <h6>Rörelseapparatens anatomi I</h6>
+                <h6>Rörelseapparatens anatomi II</h6>
+                <h6>Nutrition I</h6>
+                <h6>Rörelseapparatens skador och sjukdomar</h6>
+                <h6>Humanfysiologi</h6>
+                <h6>Träningslära I</h6>
+                <h6>Rörelse- och funktionsanalys</h6>
+                <h6>Idrott och fysisk aktivitet för alla</h6>
+                <h6>Pedagogiskt ledarskap och coaching</h6>
+                <h6>Träningslära II</h6>
+                <h6>Tillämpad nutrition</h6>
+                <h6>Biomekanik inom träning</h6>
+                <h6>Idrottsfysiologi</h6>
+                <h6>Ergonomi - grundkurs</h6>
+                <h6>Gym-, idrotts-, tränarpraktik</h6>
+                <h6>Fysiologiska och biomekaniska mätmetoder</h6>
+                <h6>Vetenskapsteori och metod</h6>
+                <h6>Entreprenörskap för hälsobranschen</h6>
+                <h6>Idrottsnutrition</h6>
+                <h6>Funktionshinder: psykologiska och sociala perspektiv</h6>
+                <h6>Examensarbete i biomedicin inriktning fysisk träning</h6>
+              </div>
+            </form>
+          </dialog>
+    </div>
+
    
 
 
 
-  
-    <script src="../js/global.js"></script>
+    <script src="./js/DOM.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/dialog.js"></script>
  
     
 </body>
