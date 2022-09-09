@@ -111,9 +111,6 @@
 
 }
 
-
-
-
 .header-phone {
     display: flex;
     flex-direction: row;
@@ -171,6 +168,10 @@
     text-shadow: 4px 4px 4px #aaa;
 }
 
+.nav-pointer {
+    cursor: pointer;
+}
+
 
 
 
@@ -193,30 +194,7 @@
     height: 1rem;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-}
 
-  
-.card {
-box-shadow: 0 3px 10px 0 #aaa;
-cursor: pointer;
-height: 7rem;
-width: 90vw;
-
-}
-
-
-.card h2 {
-font-size: 20px;
-font-weight: bold;
-}
-
-.card.visited {
-box-shadow: 0 3px 10px 2px #444;
-}
 
 
 .line {
