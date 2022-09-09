@@ -14,9 +14,7 @@
     .box {
         margin-left: 2rem !important;
         margin-right: 2rem !important; 
-        margin-top: 15vh !important;
-        height: 12rem;
-        width: 24rem;
+
     }
     .about-container {
         margin-left: 10rem !important;
@@ -113,10 +111,7 @@
 
 }
 
-.row {
-    display: flex;
-    align-items: baseline;
-}
+
 
 
 .header-phone {
@@ -301,12 +296,7 @@ body {
     margin-bottom: -0.5rem;
 }
 
-.box{
-    box-shadow: 4px 4px 4px #aaa;
-    border-color:#381D2A;
-    height: 10rem;
-    width: 90vw;
-}
+
 
 .about-box{
     box-shadow: 4px 4px 4px #aaa;

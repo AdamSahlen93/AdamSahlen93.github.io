@@ -16,44 +16,141 @@
 </head>
 
 <body>
-    <!-- HEADER PHONE -->
-    <header class="justify-content-between header-phone ">
-        <div class="d-flex flex-column mt-3 ml-2" >
-          
-            <!-- <h6 class="greeting">Adam Sahlén</h6>
-            <h6 class="title">Fullstack Javautvecklare</h6> -->
-        
-        </div>
-        <div id="myNav" class="overlay">
-            <div class="overlay-content">
-                <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end" href="/html/about_me.html">Om mig</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/my_stack.html">Kunskaper</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/education_and_experiences.html">Utbildning</a>
-            </div>
-        </div>
-        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
-    </header>
 
-    <!-- HEADER PC-->
+      <!-- HEADER PC-->
     <header class="header-pc">
         <nav class="d-flex flex-row justify-content-center nav-text">
-            <a><i class="fa-solid fa-house fa-xs text-decoration-none text-olive mx-3"></i></a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/about_me.html">Om mig</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/my_stack.html">Kunskaper</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/education_and_experiences.html">Utbildning</a>
+            <a onclick="showText1()"><i class="fa-solid fa-house fa-xs text-decoration-none text-olive mx-3"></i></a>
+            <a class="d-flex text-decoration-none text-dark mx-3" onclick="showText2()">Om mig</a>
+            <a class="d-flex text-decoration-none text-dark mx-3" onclick="showText3()">Kunskaper</a>
+            <a class="d-flex text-decoration-none text-dark mx-3" onclick="showText4()">Utbildning</a>
         </nav>
     </header>
+   
 
+    <!-- MAIN CONTENT -->
+    <div class="d-flex flex-row justify-content-center align-items-center">
 
-     <!-- MAIN CONTENT -->
-    <section class="mt-5 d-flex flex-row justify-content-center align-items-center home-content">
-        <img class="profile-picture-home mb-4 d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <h6 class="d-flex greeting-home mx-5">Adam Sahlén</h6>
-            <h6 class="d-flex title-home mx-5">Fullstack Javadeveloper</h6>
+        <!--HOME-->
+        <div id="home">
+            <section class="mt-5 d-flex flex-row justify-content-center align-items-center home-content">
+                <img class="profile-picture-home mb-4 d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h6 class="d-flex greeting-home mx-5">Adam Sahlén</h6>
+                    <h6 class="d-flex title-home mx-5">Fullstack Javadeveloper</h6>
+                </div>
+        
+            </section>
         </div>
 
-    </section>
+        <!--ABOUT-->
+        <div id="about">
+            <section class="mt-5 about-container d-flex flex-row justify-content-center">
+                <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center border about-box rounded bg-white">
+                    <div class="xl-line bg-olive mt-2 mx-5"></div>    
+                    <p class="d-flex pt-2 about-me-text">
+                        Mitt namn är Adam Sahlén, jag är en junior javautvecklare bosatt i Hjärup, strax utanför lund, tillsammans med min sambo  och våra två barn. 
+                        Jag har alltid tyckt om att lära mig saker och utvecklas som person, något som har gjort att jag spenderat mycket tid i skolbänken. 
+                        Jag har under mina studier även försökt hitta en arbetsplats där kunskapsutveckling är en del av vardagen och det var inte förrän under min lärarutbildning 
+                        vid Malmö Universitet som jag, när vi började läsa alltmer programmering, som jag kände att jag hittat det jag sökte. 
+                        Jag bytte studieinriktning för att söka en karriär inom programmering och har inte ångrat det en sekund!
+                    </p >
+                    <p class="d-flex about-me-text">
+                        Via EC Utbildning i Malmö har jag nu slutfört den tvååriga utbildningen ”Javautvecklare” som bäst beskrivs som en fullstackutbildning, 
+                        och efter nästan 10 år av eftergymnasiala studier känner jag äntligen att jag har hittat rätt, och jag är nu redo för nya utmaningar! 
+                    </p>
+                    <div class="xl-line bg-olive my-2"></div> 
+                </div>
+        </section>
+        </div>
+
+        <!--STACK-->
+        <div id="stack">
+            <section class="d-flex flex-column mt-5 ">
+                <!-- <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
+                <div class="d-flex flex-column stack-container align-items-center">
+                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
+                        <div class="d-flex flex-column mx-2 pt-2 stack-box justify-content-center align-items-center">
+                            <i class="d-flex mb-4 fa-solid fa-leaf text-olive fa-2xl"></i> 
+                            <h5 class="d-flex">Backend</h5> 
+                            <p class="d-flex">Java, Springboot, REST</p>
+                            <div class="xl-line bg-olive mb-2"></div> 
+                        </div>
+                    </div>
+                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
+                        <div class="d-flex flex-column mx-2  pt-2 stack-box justify-content-center align-items-center">
+                            <i class="d-flex mb-4 fa-brands fa-react fa-2xl text-olive"></i> 
+                            <h5 class="d-flex">Frontend</h5> 
+                            <p class="d-flex ">
+                                JavaScript, React, Redux
+                            </p>
+                            <div class="xl-line bg-olive mb-2"></div> 
+                        </div>
+                    </div>
+                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
+                        <div class="d-flex flex-column mx-2  pt-2 stack-box justify-content-center align-items-center">
+                            <i class="d-flex mb-4 fa-solid fa-mobile-screen fa-2xl text-olive"></i> 
+                            <h5 class="d-flex">Övrigt</h5> 
+                            <p class="d-flex ">
+                                Androidutveckling, Testdriven utveckling
+                            </p>
+                            <div class="xl-line bg-olive mb-2"></div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Education-->
+        <div id="education">
+            <section class="d-flex flex-row w-100 align-items-center justify-content-center mt-5">
+    
+                <!-- <img class="profile-picture-pc d-flex mx-5" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
+              
+            
+                <div class="d-flex flex-column cards mx-5 justify-content-center">
+                    
+                        <!-- #1 -->
+                        <div class="d-flex card justify-content-center pt-2 border-dark mb-4" id="updateDetails1">
+                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                                <h5>Javautvecklare</h5>
+                                <h6>EC Utbildning - Malmö</h6>
+                                <p>365 Yrkeshögskolepoäng</p>
+                                <div class="line bg-olive course-bottom-line"></div>
+                            </div>
+                        </div>
+                        <!-- #2 -->
+                        <div class="d-flex card justify-content-center pt-2 border-dark mb-4" id="updateDetails2">
+                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                                <h5>Ämneslärarutbildning</h5>
+                                <h6>Malmö Universitet</h6>
+                                <p>171 Högskolepoäng</p>
+                                <div class="line bg-olive course-bottom-line"></div>
+                            </div>
+                        </div>
+                        <!-- #3 -->
+                        <div class="d-flex card  border-dark justify-content-center pt-2 mb-4" id="updateDetails3">
+                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
+                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                                <h5>Biomedicin</h5>
+                                <h6>Halmstad Universitet</h6>
+                                <p>180 Högskolepoäng</p>
+                                <div class="line bg-olive course-bottom-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </section>
+            
+        </div>
+
+    </div>
+
+    <!-- ------------------------------------- -->
+
+
     
     <!-- Footer -->
     <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
