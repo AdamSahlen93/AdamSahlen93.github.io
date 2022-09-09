@@ -1,16 +1,6 @@
 
 
 @media screen and (min-width: 1000px) {
-    .cards {
-        flex-direction: row !important;
-        margin-top: 15vh !important;
-    }
-    .card {
-        margin-left: 1rem !important;
-        margin-right: 1rem !important; 
-        height: 10rem !important;
-        width: 24rem !important;
-    }
     .box {
         margin-left: 2rem !important;
         margin-right: 2rem !important; 
@@ -173,8 +163,6 @@
 }
 
 
-
-
 .nav-text{
     font-family: 'Tangerine', serif;
     font-size: 40px;
@@ -183,18 +171,6 @@
 .nav-regular {
     color: #381D2A;
 }
-
-.nav-open {
-    color: #F39B6D;
-}
-
-
-
-.icon-with-text {
-    height: 1rem;
-}
-
-
 
 
 .line {

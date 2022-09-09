@@ -1,21 +1,30 @@
 
-const updateButton1 = document.getElementById('updateDetails1');
-const favDialog1 = document.getElementById('favDialog1');
+const showDialogButton1 = document.getElementById('java-card');
+const hideDialog1 = document.getElementById("cancel-java")
+const javaDialog = document.getElementById('java-dialog');
 
 
 // If a browser doesn't support the dialog, then hide the
 // dialog contents by default.
-if (typeof favDialog1.showModal !== 'function') {
-  favDialog1.hidden = true;
+if (typeof javaDialog.showModal !== 'function') {
+  javaDialog.hidden = true;
   /* a fallback script to allow this dialog/form to function
      for legacy browsers that do not support <dialog>
      could be provided here.
   */
 }
 // "Update details" button opens the <dialog> modally
-updateButton1.addEventListener('click', () => {
-  if (typeof favDialog1.showModal === "function") {
-    favDialog1.showModal();
+showDialogButton1.addEventListener('click', () => {
+  if (typeof javaDialog.showModal === "function") {
+    javaDialog.showModal();
+  } else {
+    outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
+  }
+});
+// "Update details" button opens the <dialog> modally
+hideDialog1.addEventListener('click', () => {
+  if (typeof javaDialog.showModal === "function") {
+    javaDialog.hidden = true;
   } else {
     outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
   }
@@ -23,8 +32,8 @@ updateButton1.addEventListener('click', () => {
 
 
 
-const updateButton2 = document.getElementById('updateDetails2');
-const favDialog2 = document.getElementById('favDialog2');
+const updateButton2 = document.getElementById('teacher-card');
+const favDialog2 = document.getElementById('teacher-dialog');
 
 // If a browser doesn't support the dialog, then hide the
 // dialog contents by default.
@@ -46,8 +55,8 @@ updateButton2.addEventListener('click', () => {
 
 
 
-const updateButton3 = document.getElementById('updateDetails3');
-const favDialog3 = document.getElementById('favDialog3');
+const updateButton3 = document.getElementById('biomedicin-card');
+const favDialog3 = document.getElementById('biomedicin-dialog');
 
 // If a browser doesn't support the dialog, then hide the
 // dialog contents by default.
