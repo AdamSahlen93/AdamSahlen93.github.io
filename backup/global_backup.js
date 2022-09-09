@@ -139,8 +139,3 @@ function hamburger() {
     activeNav = true
   }
 }
-
-
-
-
-
