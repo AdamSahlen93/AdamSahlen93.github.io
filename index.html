@@ -23,53 +23,46 @@
 <body>
 
      <!-- HEADER PHONE -->
-     <header class="justify-content-between header-phone">
-        <div class="d-flex flex-row mt-3 ml-2" >
-            <a onclick="showText1()" class="nav-pointer"><img class="profile-picture-phone d-flex" src="/resources/Profilbild.jpg"   alt="Profile-Picture"></a>
-            <div class="d-flex flex-column justify-content-end ml-2 bg-warning ">
-                <h6 class="greeting">Adam Sahlén</h6>
-                <h6 class="title">Fullstack Javautvecklare</h6>
-            </div>
-        </div>
+     <header class="d-flex flex-column header-phone w-100 ml-3">
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 justify-content-end nav-pointer" onclick="showText2()">Om mig</a>
-                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3 justify-content-end nav-pointer" onclick="showText3()">Kunskaper</a>
-                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 justify-content-end nav-pointer" onclick="showText4()">Utbildning</a>
+                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText2()">Om mig</a>
+                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3  pointer" onclick="showText3()">Kunskaper</a>
+                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText4()">Utbildning</a>
             </div>
         </div>
         <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
     </header>
 
       <!-- HEADER PC-->
-    <header class="header-pc">
+    <header class="header-pc w-100">
         <nav class="d-flex flex-row justify-content-center nav-text">
-            <div><i id="home_button" class="fa-solid fa-house fa-xs text-decoration-none mx-3 nav-pointer" onclick="showText1()"></i></div>
-            <a id="about_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText2()">Om mig</a>
-            <a id="stack_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText3()">Kunskaper</a>
-            <a id="education_button" class="d-flex text-decoration-none mx-3 nav-pointer" onclick="showText4()">Utbildning</a>
+            <div><i id="home_button" class="fa-solid fa-house fa-xs text-decoration-none mx-3 pointer" onclick="showText1()"></i></div>
+            <a id="about_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText2()">Om mig</a>
+            <a id="stack_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText3()">Kunskaper</a>
+            <a id="education_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText4()">Utbildning</a>
         </nav>
     </header>
    
 
     <!-- MAIN CONTENT -->
-    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div id="body" class="d-flex flex-column justify-content-start align-items-center my-3">
 
         <!--HOME-->
         <div id="home">
-            <section class="mt-5 d-flex flex-row justify-content-center align-items-center home-content">
-                <img class="profile-picture-home mb-4 d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <h6 class="d-flex greeting-home mx-5">Adam Sahlén</h6>
-                    <h6 class="d-flex title-home mx-5">Fullstack Javadeveloper</h6>
+            <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+                <img class="profile-picture-home mb-3" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+                <div class="d-flex flex-column align-items-center">
+                    <h6 class="d-flex name-home">Adam Sahlén</h6>
+                    <h6 class="d-flex title-home">Fullstack Javadeveloper</h6>
                 </div>
         
-            </section>
+            </div>
         </div>
 
         <!--ABOUT-->
         <div id="about">
-            <section class="mt-5 about-container d-flex flex-row justify-content-center">
+            <section class="about-container d-flex flex-row justify-content-center">
                 <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center border about-box rounded bg-white">
                     <div class="xl-line bg-olive mt-2 mx-5"></div>    
                     <p class="d-flex pt-2 about-me-text">
@@ -126,15 +119,15 @@
         </div>
         <!--Education-->
         <div id="education">
-            <section class="d-flex flex-row w-100 align-items-center justify-content-center mt-5">
+            <section class="d-flex flex-row align-items-center justify-content-center mt-5">
     
                 <!-- <img class="profile-picture-pc d-flex mx-5" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
               
             
-                <div class="d-flex flex-column cards mx-5 justify-content-center">
+                <div class="d-flex flex-column cards justify-content-center">
                     
                         <!-- #1 -->
-                        <div onclick="openJavaDialog()" class="d-flex justify-content-center pt-2 border-dark rounded bg-white border mb-4 nav-pointer" >
+                        <div onclick="openJavaDialog()" class="d-flex justify-content-center pt-2 border-dark rounded bg-white border mb-4 pointer" >
                             <div class="d-flex flex-column card-body justify-content-center align-items-center">
                                 <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
                                 <h5>Javautvecklare</h5>
@@ -173,8 +166,7 @@
     </div>
 
     <!-- ------------------------------------- -->
-
-
+ 
     
     <!-- Footer -->
     <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
@@ -209,7 +201,7 @@
     </footer>
 
     <div>
-        <dialog class="w-100" id="java-dialog">
+        <dialog class="" id="java-dialog">
                 
                     <div class="d-flex flex-row justify-content-between">
                         <h5>Javautvecklare</h5>
