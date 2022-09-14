@@ -13,10 +13,12 @@
 
 .information-container {
     width: inherit;
+   
 }
 
 .arrow-container {
     width: inherit;
+    border: 0;
 }
 
 #java-dialog {
