@@ -8,31 +8,15 @@
 }
 
 .title-container {
-    width: 20rem;
+    width: inherit;
 }
 
 .information-container {
-    width: 20rem;
-}
-.dot-container {
-    width: 20rem;
+    width: inherit;
 }
 
-
-.card {
-box-shadow: 0 3px 10px 0 #aaa;
-cursor: pointer;
-height: 7rem;
-
-}
-
-.card h2 {
-font-size: 20px;
-font-weight: bold;
-}
-
-.card.visited {
-box-shadow: 0 3px 10px 2px #444;
+.arrow-container {
+    width: inherit;
 }
 
 #java-dialog {

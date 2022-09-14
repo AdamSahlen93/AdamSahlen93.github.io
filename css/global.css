@@ -3,7 +3,7 @@ body {
 }
 
 #body {
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .shadow {
@@ -17,6 +17,12 @@ body {
 /* --- Me --- */ 
 
 .profile-picture-phone {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+}
+
+.profile-picture-navigation {
     height: 5rem;
     width: 5rem;
     border-radius: 100%;
@@ -65,6 +71,7 @@ body {
 .header-phone {
     display: flex;
     flex-direction: row;
+    min-height: 3rem;
 }
 
 .header-pc {
@@ -150,7 +157,7 @@ height: 0%;
 width: 100%;
 position: fixed;
 z-index: 1;
-top: 5rem;
+top: 3.5rem;
 left: 0;
 background-color: rgb(56,29,42);
 background-color: rgba(56,29,42,0.95);
