@@ -5,6 +5,11 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
   }
+
+  function navigated() {
+    document.getElementById("myNav").style.height = "0%";
+    activeNav = false
+  }
   
   var activeNav = false;
   

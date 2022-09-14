@@ -1,0 +1,14 @@
+.stackcard-body {
+    width: 20rem;
+    height: 8rem;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+.category-container {
+    width: 10rem;
+    height: 100%;
+}
+
+.text-container {
+    width: 10rem;
+}

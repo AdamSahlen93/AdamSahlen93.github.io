@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Sahlén</title>
   
-    <link rel="shortcut icon" type="image/jpg" href="/resources/seedling-solid.svg"/>
+    <link rel="shortcut icon" type="image/jpg" href="/resources/java.svg"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2e51cacbb3.js" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/stack_card.css">
     <link rel="stylesheet" href="/css/education_card.css">
     <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/stack.css">
+    <link rel="stylesheet" href="/css/stack.css"> 
     <link rel="icon" class="fa-solid fa-house">
 
 </head>
@@ -26,12 +26,12 @@
      <header class="d-flex flex-column header-phone w-100 ml-3">
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText2()">Om mig</a>
-                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3  pointer" onclick="showText3()">Kunskaper</a>
-                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText4()">Utbildning</a>
+                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText2() , navigated()">Om mig</a>
+                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3  pointer" onclick="showText3(), navigated()">Kunskaper</a>
+                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText4(), navigated()">Utbildning</a>
             </div>
         </div>
-        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
+        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer"><i class="fa-solid fa-bars fa-xl" onclick="hamburger()"></i></span>
     </header>
 
       <!-- HEADER PC-->
@@ -63,8 +63,8 @@
         <!--ABOUT-->
         <div id="about">
             <section class="about-container d-flex flex-row justify-content-center">
-                <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center border about-box rounded bg-white">
-                    <div class="xl-line bg-olive mt-2 mx-5"></div>    
+                <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center">
+                    <!-- <div class="xl-line bg-olive mt-2 mx-5"></div>     -->
                     <p class="d-flex pt-2 about-me-text">
                         Mitt namn är Adam Sahlén, jag är en junior javautvecklare bosatt i Hjärup, strax utanför lund, tillsammans med min sambo  och våra två barn. 
                         Jag har alltid tyckt om att lära mig saker och utvecklas som person, något som har gjort att jag spenderat mycket tid i skolbänken. 
@@ -76,91 +76,140 @@
                         Via EC Utbildning i Malmö har jag nu slutfört den tvååriga utbildningen ”Javautvecklare” som bäst beskrivs som en fullstackutbildning, 
                         och efter nästan 10 år av eftergymnasiala studier känner jag äntligen att jag har hittat rätt, och jag är nu redo för nya utmaningar! 
                     </p>
-                    <div class="xl-line bg-olive my-2"></div> 
+                    <!-- <div class="xl-line bg-olive my-2"></div>  -->
                 </div>
         </section>
         </div>
 
         <!--STACK-->
         <div id="stack">
-            <section class="d-flex flex-column mt-5 ">
                 <!-- <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
                 <div class="d-flex flex-column stack-container align-items-center">
-                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
-                        <div class="d-flex flex-column mx-2 pt-2 stack-box justify-content-center align-items-center">
-                            <i class="d-flex mb-4 fa-solid fa-leaf text-olive fa-2xl"></i> 
-                            <h5 class="d-flex">Backend</h5> 
-                            <p class="d-flex">Java, Springboot, REST</p>
-                            <div class="xl-line bg-olive mb-2"></div> 
+
+                    <!-- BACKEND -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3  category-container bg-olive rounded-left">
+                            <i class="d-flex mt-1 fa-solid fa-leaf text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Backend</h5> 
+                        </div>
+                        <div class="d-flex  align-items-center px-3 text-container">
+                        <table>
+                            <tr>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>Springboot</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+
+                    <!-- FRONTEND -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                            <i class="d-flex mt-1 fa-brands fa-react text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Frontend</h5> 
+                        </div>
+                        <div class="d-flex align-items-center px-3 text-container">
+                            <table>
+                                <tr>
+                                    <td>JavaScript</td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                </tr>
+                                <tr>
+                                    <td>Redux</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
-                        <div class="d-flex flex-column mx-2  pt-2 stack-box justify-content-center align-items-center">
-                            <i class="d-flex mb-4 fa-brands fa-react fa-2xl text-olive"></i> 
-                            <h5 class="d-flex">Frontend</h5> 
-                            <p class="d-flex ">
-                                JavaScript, React, Redux
-                            </p>
-                            <div class="xl-line bg-olive mb-2"></div> 
+
+                    <!-- OTHER -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                            <i class="d-flex fa-solid mt-1 fa-mobile-screen text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Övrigt</h5> 
                         </div>
+                        <div class="d-flex align-items-center px-3 text-container">
+                        <table>
+                            <tr>
+                                <td>Androidutveckling</td>
+                            </tr>
+                            <tr>
+                                <td>Testdrivet</td>
+                            </tr>
+                            <tr>
+                                <td>Agilt arbete</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="d-flex mx-2 align-items-center border box rounded mt-3 bg-white">
-                        <div class="d-flex flex-column mx-2  pt-2 stack-box justify-content-center align-items-center">
-                            <i class="d-flex mb-4 fa-solid fa-mobile-screen fa-2xl text-olive"></i> 
-                            <h5 class="d-flex">Övrigt</h5> 
-                            <p class="d-flex ">
-                                Androidutveckling, Testdriven utveckling
-                            </p>
-                            <div class="xl-line bg-olive mb-2"></div> 
-                        </div>
                     </div>
+
+                    
                 </div>
-            </section>
+
         </div>
+
         <!--Education-->
         <div id="education">
-            <section class="d-flex flex-row align-items-center justify-content-center mt-5">
-    
+           
                 <!-- <img class="profile-picture-pc d-flex mx-5" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
-              
-            
-                <div class="d-flex flex-column cards justify-content-center">
+                <div class="d-flex flex-column cards justify-content-center mt-3">
                     
                         <!-- #1 -->
-                        <div onclick="openJavaDialog()" class="d-flex justify-content-center pt-2 border-dark rounded bg-white border mb-4 pointer" >
-                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
-                                <h5>Javautvecklare</h5>
-                                <h6>EC Utbildning - Malmö</h6>
-                                <p>365 Yrkeshögskolepoäng</p>
-                                <div class="line bg-olive course-bottom-line"></div>
-                            </div>
+                        <div onclick="openJavaDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+                         
+                                <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                                    <h5>Javautvecklare</h5>
+                                    
+                                </div>
+                                <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
+                                    <h6>EC Utbildning - Malmö</h6>
+                                    <p class="d-flex mr-3">365 Yrkeshögskolepoäng</p>
+                             
+                                </div>
+                                <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                        
                         </div>
+
                         <!-- #2 -->
-                        <div onclick="openTeacherDialog()" class="d-flex justify-content-center pt-2 border-dark mb-4" id="teacher-card">
-                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <div onclick="openTeacherDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+    
+                            <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
                                 <h5>Ämneslärarutbildning</h5>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
                                 <h6>Malmö Universitet</h6>
-                                <p>171 Högskolepoäng</p>
-                                <div class="line bg-olive course-bottom-line"></div>
+                                <p class="d-flex mr-3">171 Högskolepoäng</p>
                             </div>
+                            <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                    
                         </div>
+            
+
                         <!-- #3 -->
-                        <div onclick="openBiomedicineDialog()" class="d-flex  border-dark justify-content-center pt-2 mb-4" id="biomedicin-card">
-                            <div class="d-flex flex-column card-body justify-content-center align-items-center">
-                                <!-- <div class="circle c-medium bg-info"><i class="fa-solid fa-person fa-2xl"></i></div> -->
+                        <div onclick="openBiomedicineDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+    
+                            <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
                                 <h5>Biomedicin</h5>
-                                <h6>Halmstad Universitet</h6>
-                                <p>180 Högskolepoäng</p>
-                                <div class="line bg-olive course-bottom-line"></div>
+                                
                             </div>
+                            <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
+                                <h6>Halmstad Universitet</h6>
+                                <p class="d-flex mr-3">180 Högskolepoäng</p>
+                            </div>
+                            <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                    
                         </div>
+    
+                        
                     </div>
                 </div>
-            
-                </section>
-            
         </div>
 
     </div>
@@ -173,7 +222,7 @@
 
         <div class="d-flex flex-column pt-3 pb-1 pl-2 contacts-container">
             <div class="d-flex flex-row pb-2">
-                <h6 class="d-flex">Contact & Location</h6>
+                <h6 class="d-flex">Kontakt</h6>
             </div>
 
             <div class="d-flex flex-row align-items-center contacts">
@@ -182,7 +231,7 @@
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-fle">Lund, Sweden</p>
+                <p class="d-fle">Lillgränd 17b, Hjärup</p>
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>

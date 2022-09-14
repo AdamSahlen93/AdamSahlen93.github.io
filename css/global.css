@@ -6,6 +6,10 @@ body {
     min-height: 100vh
 }
 
+.shadow {
+    box-shadow: 1px 1px 1px #aaa;
+}
+
 .home-content {
     justify-content: center;
 }
@@ -146,7 +150,7 @@ height: 0%;
 width: 100%;
 position: fixed;
 z-index: 1;
-top: 6.5rem;
+top: 5rem;
 left: 0;
 background-color: rgb(56,29,42);
 background-color: rgba(56,29,42,0.95);
@@ -181,41 +185,11 @@ color: #f1f1f1;
 
 /* --- Queries --- */
 @media screen and (min-width: 1000px) {
-    .box {
-        margin-left: 2rem !important;
-        margin-right: 2rem !important; 
-
-    }
-    .stack-container {
-        flex-direction: row !important;
-        justify-content: center;
-    }
-    .stack-box {
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .header-pc {
-        margin-top: 3rem;
-    }
-    .course-bottom-line {
-        width: 20rem !important;
-    } 
-    .name-home {
-        font-size: 8rem !important;
-    }
-    .title-home {
-        font-size: 4rem !important;
-    }
-    .nav-text {
-        font-size: 3rem !important;
-    }
-
+    
 }
 
 @media screen and (max-width: 1000px) {
-    .card-with-icon {
-        display: none !important;
-    } 
+
 }
 
 
@@ -259,13 +233,6 @@ color: #f1f1f1;
         align-items: center;
         margin-bottom: 1rem;
     }
-    .name-home {
-        font-size: 4rem !important;
-    }
-    .title-home {
-        font-size: 2rem !important;
-    }
-
-
+   
 }
 
