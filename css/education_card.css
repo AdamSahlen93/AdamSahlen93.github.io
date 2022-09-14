@@ -1,38 +1,21 @@
-.cards {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .education-card {
     width: 20rem;
 }
 
 .title-container {
-    width: 20rem;
+    width: inherit;
 }
 
 .information-container {
-    width: 20rem;
-}
-.dot-container {
-    width: 20rem;
+    width: inherit;
+   
 }
 
-
-.card {
-box-shadow: 0 3px 10px 0 #aaa;
-cursor: pointer;
-height: 7rem;
-
-}
-
-.card h2 {
-font-size: 20px;
-font-weight: bold;
-}
-
-.card.visited {
-box-shadow: 0 3px 10px 2px #444;
+.arrow-container {
+    width: inherit;
+    border: 0;
 }
 
 #java-dialog {
@@ -53,11 +36,3 @@ box-shadow: 0 3px 10px 2px #444;
     box-shadow: 1px 1px 1px #aaa;
 }
 
-@media screen and (min-width: 1000px) {
-    /* .cards {
-        flex-direction: row !important;
-    }
-    .card {
-        height: 10rem !important;
-    } */
-}
