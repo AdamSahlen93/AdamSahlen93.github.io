@@ -5,62 +5,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Sahlén</title>
+  
+    <link rel="shortcut icon" type="image/jpg" href="/resources/java.svg"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2e51cacbb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="/css/global.css">
-
+    <link rel="stylesheet" href="/css/stack_card.css">
+    <link rel="stylesheet" href="/css/education_card.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/stack.css"> 
     <link rel="icon" class="fa-solid fa-house">
 
 </head>
 
 <body>
-    <!-- HEADER PHONE -->
-    <header class="justify-content-between header-phone ">
-        <div class="d-flex flex-column mt-3 ml-2" >
-          
-            <!-- <h6 class="greeting">Adam Sahlén</h6>
-            <h6 class="title">Fullstack Javautvecklare</h6> -->
-        
-        </div>
+
+     <!-- HEADER PHONE -->
+     <header class="d-flex flex-column header-phone w-100 ml-3">
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <a class="d-flex text-decoration-none text-olive mx-3 justify-content-end" href="/html/about_me.html">Om mig</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/my_stack.html">Kunskaper</a>
-                <a class="d-flex text-decoration-none text-white mx-3 justify-content-end" href="/html/education_and_experiences.html">Utbildning</a>
+                <a id="about_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText2() , navigated()">Om mig</a>
+                <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3  pointer" onclick="showText3(), navigated()">Kunskaper</a>
+                <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText4(), navigated()">Utbildning</a>
             </div>
         </div>
-        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer" onclick="hamburger()"><i class="fa-solid fa-bars fa-xl"></i></span>
+        <span class="mr-4 mt-4 pt-2" style="font-size:30px;cursor:pointer"><i class="fa-solid fa-bars fa-xl" onclick="hamburger()"></i></span>
     </header>
 
-    <!-- HEADER PC-->
-    <header class="header-pc">
+      <!-- HEADER PC-->
+    <header class="header-pc w-100">
         <nav class="d-flex flex-row justify-content-center nav-text">
-            <a><i class="fa-solid fa-house fa-xs text-decoration-none text-olive mx-3"></i></a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/about_me.html">Om mig</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/my_stack.html">Kunskaper</a>
-            <a class="d-flex text-decoration-none text-dark mx-3" href="/html/education_and_experiences.html">Utbildning</a>
+            <div><i id="home_button" class="fa-solid fa-house fa-xs text-decoration-none mx-3 pointer" onclick="showText1()"></i></div>
+            <a id="about_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText2()">Om mig</a>
+            <a id="stack_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText3()">Kunskaper</a>
+            <a id="education_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText4()">Utbildning</a>
         </nav>
     </header>
+   
 
+    <!-- MAIN CONTENT -->
+    <div id="body" class="d-flex flex-column justify-content-start align-items-center my-3">
 
-     <!-- MAIN CONTENT -->
-    <section class="mt-5 d-flex flex-row justify-content-center align-items-center home-content">
-        <img class="profile-picture-home mb-4 d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <h6 class="d-flex greeting-home mx-5">Adam Sahlén</h6>
-            <h6 class="d-flex title-home mx-5">Fullstack Javadeveloper</h6>
+        <!--HOME-->
+        <div id="home">
+            <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+                <img class="profile-picture-home mb-3" src="/resources/Profilbild.jpg" alt="Profile-Picture">
+                <div class="d-flex flex-column align-items-center">
+                    <h6 class="d-flex name-home">Adam Sahlén</h6>
+                    <h6 class="d-flex title-home">Fullstack Javadeveloper</h6>
+                </div>
+        
+            </div>
         </div>
 
-    </section>
+        <!--ABOUT-->
+        <div id="about">
+            <section class="about-container d-flex flex-row justify-content-center">
+                <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center">
+                    <!-- <div class="xl-line bg-olive mt-2 mx-5"></div>     -->
+                    <p class="d-flex pt-2 about-me-text">
+                        Mitt namn är Adam Sahlén, jag är en junior javautvecklare bosatt i Hjärup, strax utanför lund, tillsammans med min sambo  och våra två barn. 
+                        Jag har alltid tyckt om att lära mig saker och utvecklas som person, något som har gjort att jag spenderat mycket tid i skolbänken. 
+                        Jag har under mina studier även försökt hitta en arbetsplats där kunskapsutveckling är en del av vardagen och det var inte förrän under min lärarutbildning 
+                        vid Malmö Universitet som jag, när vi började läsa alltmer programmering, som jag kände att jag hittat det jag sökte. 
+                        Jag bytte studieinriktning för att söka en karriär inom programmering och har inte ångrat det en sekund!
+                    </p >
+                    <p class="d-flex about-me-text">
+                        Via EC Utbildning i Malmö har jag nu slutfört den tvååriga utbildningen ”Javautvecklare” som bäst beskrivs som en fullstackutbildning, 
+                        och efter nästan 10 år av eftergymnasiala studier känner jag äntligen att jag har hittat rätt, och jag är nu redo för nya utmaningar! 
+                    </p>
+                    <!-- <div class="xl-line bg-olive my-2"></div>  -->
+                </div>
+        </section>
+        </div>
+
+        <!--STACK-->
+        <div id="stack">
+                <!-- <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
+                <div class="d-flex flex-column stack-container align-items-center">
+
+                    <!-- BACKEND -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3  category-container bg-olive rounded-left">
+                            <i class="d-flex mt-1 fa-solid fa-leaf text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Backend</h5> 
+                        </div>
+                        <div class="d-flex  align-items-center px-3 text-container">
+                        <table>
+                            <tr>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>Springboot</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+
+                    <!-- FRONTEND -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                            <i class="d-flex mt-1 fa-brands fa-react text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Frontend</h5> 
+                        </div>
+                        <div class="d-flex align-items-center px-3 text-container">
+                            <table>
+                                <tr>
+                                    <td>JavaScript</td>
+                                </tr>
+                                <tr>
+                                    <td>React</td>
+                                </tr>
+                                <tr>
+                                    <td>Redux</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- OTHER -->
+                    <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                            <i class="d-flex fa-solid mt-1 fa-mobile-screen text-white fa-2xl"></i> 
+                            <h5 class="d-flex mt-4 text-white">Övrigt</h5> 
+                        </div>
+                        <div class="d-flex align-items-center px-3 text-container">
+                        <table>
+                            <tr>
+                                <td>Androidutveckling</td>
+                            </tr>
+                            <tr>
+                                <td>Testdrivet</td>
+                            </tr>
+                            <tr>
+                                <td>Agilt arbete</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+
+                    
+                </div>
+
+        </div>
+
+        <!--Education-->
+        <div id="education">
+           
+                <!-- <img class="profile-picture-pc d-flex mx-5" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
+                <div class="d-flex flex-column cards justify-content-center mt-3">
+                    
+                        <!-- #1 -->
+                        <div onclick="openJavaDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+                         
+                                <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                                    <h5>Javautvecklare</h5>
+                                    
+                                </div>
+                                <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
+                                    <h6>EC Utbildning - Malmö</h6>
+                                    <p class="d-flex mr-3">365 Yrkeshögskolepoäng</p>
+                             
+                                </div>
+                                <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                        
+                        </div>
+
+                        <!-- #2 -->
+                        <div onclick="openTeacherDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+    
+                            <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                                <h5>Ämneslärarutbildning</h5>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
+                                <h6>Malmö Universitet</h6>
+                                <p class="d-flex mr-3">171 Högskolepoäng</p>
+                            </div>
+                            <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                    
+                        </div>
+            
+
+                        <!-- #3 -->
+                        <div onclick="openBiomedicineDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
+    
+                            <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                                <h5>Biomedicin</h5>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-white information-container justify-content-center align-items-center pt-2">
+                                <h6>Halmstad Universitet</h6>
+                                <p class="d-flex mr-3">180 Högskolepoäng</p>
+                            </div>
+                            <div class="d-flex dot-container bg-white justify-content-end align-items-center rounded-bottom"><i class="fa-solid fa-angle-down mr-2 mb-2"></i></div>
+                    
+                        </div>
+    
+                        
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <!-- ------------------------------------- -->
+ 
     
     <!-- Footer -->
     <footer class="footer d-flex flex-row justify-content-between px-2 text-white">
 
         <div class="d-flex flex-column pt-3 pb-1 pl-2 contacts-container">
             <div class="d-flex flex-row pb-2">
-                <h6 class="d-flex">Contact & Location</h6>
+                <h6 class="d-flex">Kontakt</h6>
             </div>
 
             <div class="d-flex flex-row align-items-center contacts">
@@ -69,7 +231,7 @@
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-fle">Lund, Sweden</p>
+                <p class="d-fle">Lillgränd 17b, Hjärup</p>
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>
@@ -87,12 +249,119 @@
 
     </footer>
 
+    <div>
+        <dialog class="" id="java-dialog">
+                
+                    <div class="d-flex flex-row justify-content-between">
+                        <h5>Javautvecklare</h5>
+                       <button onclick="closeJavaDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                    </div>
+                    <h6 class="d-flex">
+                        Oktober 2020 – Juni 2022
+                    </h6>
+                    <div class="xl-line bg-olive"></div>
+                    <p class="d-flex">
+                        Fullstackutbildning med fokus på Java och Javascript där följande kurser ingick  
+                    </p>
+                    <h6>Programmering i Java</h6>
+                    <h6>HTML5 och CSS</h6>
+                    <h6>Javascript</h6>
+                    <h6>Avancerad Javaprogrammering</h6>
+                    <h6>Projektkunskap enligt agila metoder</h6>
+                    <h6>Praktisk databasdesign</h6>
+                    <h6>Webbutveckling i Java</h6>
+                    <h6>LIA 1 - Applikationsutveckling</h6>
+                    <h6>Utveckling för Androidplattformar</h6>
+                    <h6>Testdriven utveckling i Java</h6>
+                    <h6>Avancerad Javascript</h6>
+                    <h6>Mjukvaru- och portfolioprojekt</h6>
+                    <h6>Java web-services</h6>
+                    <h6>LIA 2 - Systemutveckling</h6>
+                    <h6>Examensarbete</h6>
+
+                  </div>
+             
+            </div>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog class="w-100" id="teacher-dialog">
+                <div class="d-flex flex-row justify-content-between">
+                    <h5>Ämneslärarutbildning</h5>
+                   <button onclick="closeTeacherDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h6 class="d-flex">
+                    September 2016 – Februari 2020
+                </h6>
+                <div class="xl-line bg-olive"></div>
+                <p class="d-flex">
+                    Utbildning för skolans årskurs 7-9 med ämnena matematik, teknik och biologi
+                </p>
+                <h6>Matematik och lärande: Att se mönster i matematik</h6>
+                <h6>Verksamhetsförlagd utbildning I</h6>
+                <h6>Sociala relationer, konflikthantering och pedagogiskt ledarskap</h6>
+                <h6>Teknik och lärande: Grundkurs</h6>
+                <h6>Teknik och lärande: Teknik i vår omgivning</h6>
+                <h6>Teknik och lärande: Den moderna tekniken</h6>
+                <h6>Verksamhetsförlagd utbildning II</h6>
+                <h6>Skola, värdegrund och samhälle</h6>
+                <h6>Biologi och lärande: Människan och hälsa</h6>
+                <h6>Verksamhetsförlagd utbildning III</h6>
+                <h6>Biologi och lärande: Genetik och evolution</h6>
+                <h6>Matematik och lärande: Programmering och diskret matematik</h6>
+                <h6>Specialpedagogiska perspektiv på utveckling och lärande</h6>
+                <h6>Självständigt arbete i fördjupningsämnet</h6>
+              </div>
+          </dialog>
+    </div>
+
+    <div>
+        <dialog class="w-100" id="biomedicine-dialog">
+                <div class="d-flex flex-row justify-content-between">
+                    <h5>Biomedicin</h5>
+                   <button onclick="closeBiomedicineDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                </div>
+                <h6 class="d-flex">
+                    September 2012 – Maj 2015
+                </h6>
+                <div class="xl-line bg-olive"></div>
+                <p class="d-flex">
+                    Kandidatexamen med inriktning fysisk träning där allt från anatomi och fysiologi till entreprenörskap ingick
+                </p>
+                <h6>Människa och hälsa - en ämnesintroduktion</h6>
+                <h6>Rörelseapparatens anatomi I</h6>
+                <h6>Rörelseapparatens anatomi II</h6>
+                <h6>Nutrition I</h6>
+                <h6>Rörelseapparatens skador och sjukdomar</h6>
+                <h6>Humanfysiologi</h6>
+                <h6>Träningslära I</h6>
+                <h6>Rörelse- och funktionsanalys</h6>
+                <h6>Idrott och fysisk aktivitet för alla</h6>
+                <h6>Pedagogiskt ledarskap och coaching</h6>
+                <h6>Träningslära II</h6>
+                <h6>Tillämpad nutrition</h6>
+                <h6>Biomekanik inom träning</h6>
+                <h6>Idrottsfysiologi</h6>
+                <h6>Ergonomi - grundkurs</h6>
+                <h6>Gym-, idrotts-, tränarpraktik</h6>
+                <h6>Fysiologiska och biomekaniska mätmetoder</h6>
+                <h6>Vetenskapsteori och metod</h6>
+                <h6>Entreprenörskap för hälsobranschen</h6>
+                <h6>Idrottsnutrition</h6>
+                <h6>Funktionshinder: psykologiska och sociala perspektiv</h6>
+                <h6>Examensarbete i biomedicin inriktning fysisk träning</h6>
+              </div>
+          </dialog>
+    </div>
+
    
 
 
 
-  
-    <script src="../js/global.js"></script>
+    <script src="./js/DOM.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/dialog.js"></script>
  
     
 </body>
