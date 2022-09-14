@@ -4,6 +4,7 @@ body {
 
 #body {
     min-height: 100vh;
+    position: relative;
 }
 
 .shadow {
@@ -14,7 +15,6 @@ body {
     justify-content: center;
 }
 
-/* --- Me --- */ 
 
 .profile-picture-phone {
     height: 5rem;
@@ -67,7 +67,6 @@ body {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-/* --- Header --- */
 .header-phone {
     display: flex;
     flex-direction: row;
@@ -79,7 +78,10 @@ body {
     flex-direction: column;
 }
 
-/* --- Footer --- */
+.home-direction {
+    flex-direction: column;
+   
+}
 
 .footer {
     background-color: #381D2A;
@@ -96,7 +98,6 @@ body {
 }
 
 
-/* --- Visual --- */ 
 .x-button {
     height: 1.5rem;
 
@@ -111,8 +112,6 @@ body {
     width: 100%;
     height: 0.5rem;
 }
-
-/* --- Colors --- */
 
 .bg-olive {
     background-color: #AABD8C;
@@ -134,7 +133,6 @@ body {
     color: #381D2A;
 }
 
-/* --- Navigation --- */
 .topnav {
     overflow: hidden;
     z-index: 1;
@@ -148,7 +146,7 @@ body {
 
 .nav-text{
     font-family: 'Tangerine', serif;
-    font-size: 40px;
+    font-size: 45px;
 }
 
   
@@ -184,62 +182,5 @@ transition: 0.3s;
 color: #f1f1f1;
 }
   
-@media screen and (max-height: 450px) {
-.overlay {overflow-y: auto;}
-.overlay a {font-size: 20px}
-}
 
-
-/* --- Queries --- */
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (max-width: 1000px) {
-
-}
-
-
-@media screen and (min-width: 768px) {
-    .header-phone {
-        display: none !important;
-    } 
-    .header-pc {
-        margin-top: 3rem;
-    }
-} 
-
-@media screen and (max-width: 768px) {
-    .header-pc {
-        display: none !important;
-    } 
-    .profile-picture-pc{
-        display: none !important;
-    }
-    /* .name-home {
-        display: none !important;
-    }
-    .title-home {
-        display: none !important;
-    }*/
-    /* .profile-picture-home {
-        display: none !important;
-    } */
-} 
-
-@media screen and (max-width: 400px) {
-    .footer {
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
-    }  
-    .contacts {
-        justify-content: center !important;
-    }
-    .contacts-container {
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-   
-}
 

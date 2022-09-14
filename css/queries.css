@@ -1,0 +1,136 @@
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .footer {
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+
+    .stack-container{
+        flex-direction: row !important;
+    }
+    .stackcard-body {
+        height: 10rem !important;
+        width: 20rem !important;
+        
+    }
+    .category-container {
+        width: 10rem !important;
+    }
+
+    .text-container {
+        width: 15rem !important; 
+    }
+
+    .cards{
+        flex-direction: row !important;
+    }
+
+    .education-card{
+        margin-right: 5rem !important;
+        margin-right: 5rem !important;
+    }
+
+    .about-container {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .contacts-container{
+        margin-left: 1rem;
+    }
+
+    .links-container{
+        margin-right: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .header-phone {
+        display: none !important;
+    } 
+    .header-pc {
+        margin-top: 3rem;
+    }
+    .title-home {
+        font-size: 3.5rem !important;
+    }
+    
+    .name-home {
+        font-size: 6rem !important;
+    }
+    .about-container {
+        flex-direction: row !important;
+        margin-right: 2rem;
+        margin-left: 2rem;
+ 
+    }
+ 
+    .stackcard-body {
+        width: 18rem !important;
+        
+    }
+    .category-container {
+        width: 10rem !important;
+    }
+
+    .text-container {
+        width: 10rem !important;
+    }
+
+    .education-card{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+        width: 15rem !important;
+    }
+
+ 
+
+} 
+
+@media screen and (max-width: 768px) {
+
+    .header-pc {
+        display: none !important;
+    } 
+    .profile-picture-pc{
+        display: none !important;
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .footer {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }  
+    .contacts {
+        justify-content: center !important;
+    }
+    .contacts-container {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+   
+}
+
+@media screen and (min-width: 400px) {
+    .home-direction{
+        margin-top: 10rem !important;
+      }
+    
+   
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    }
+    
+

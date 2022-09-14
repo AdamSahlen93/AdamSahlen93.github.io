@@ -1,7 +1,4 @@
-.cards {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .education-card {
     width: 20rem;
@@ -39,11 +36,3 @@
     box-shadow: 1px 1px 1px #aaa;
 }
 
-@media screen and (min-width: 1000px) {
-    /* .cards {
-        flex-direction: row !important;
-    }
-    .card {
-        height: 10rem !important;
-    } */
-}
