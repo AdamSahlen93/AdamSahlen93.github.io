@@ -113,11 +113,13 @@ body {
 }
 
 .bg-primary {
-    background-color: #70587C !important;
+    background-color: #08415C !important;
+    /* background-color: #70587C !important; */
 }
 
 .bg-secondary {
-    background-color: #C8B8DB !important;
+    background-color: #388697 !important;
+    /* background-color: #C8B8DB !important; */
 }
 
 .text-primary {
@@ -154,8 +156,8 @@ position: fixed;
 z-index: 1;
 top: 3.5rem;
 left: 0;
-background-color: rgb(112,88,124);
-background-color: rgba(112,88,124,0.95);
+background-color: rgb(8,65,92);
+background-color: rgba(8,65,92,0.95);
 overflow-y: hidden;
 transition: 0.5s;
 }
