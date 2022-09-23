@@ -50,12 +50,6 @@
 
 
 @media screen and (min-width: 768px) {
-    .header-phone {
-        display: none !important;
-    } 
-    .header-pc {
-        margin-top: 3rem;
-    }
     .title-home {
         font-size: 3.5rem !important;
     }
@@ -94,9 +88,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .header-pc {
-        display: none !important;
-    } 
+
     .profile-picture-pc{
         display: none !important;
     }
@@ -118,14 +110,29 @@
    
 }
 
-@media screen and (min-width: 400px) {
-    .home-direction{
-        margin-top: 10rem !important;
-      }
+@media screen and (max-width: 440px) {
+    .title {
+        font-size: 1rem;
+    }
     
-   
+    .title-home {
+        font-size: 2rem;
+    }
+    
+    .name {
+        font-size: 1rem;
+    }
+    
+    .name-home {
+        font-size: 3.5rem;
+    }
 }
 
+@media screen and (min-width: 900px) {
+    #body {
+        margin-top: 7rem !important;
+    }
+}
 
 
 @media screen and (max-height: 450px) {
