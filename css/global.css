@@ -42,27 +42,27 @@ body {
 }
 
 .title {
-    font-family: 'Tangerine', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     text-shadow: 4px 4px 4px #aaa;
     margin-top: -1rem;
 }
 
 .title-home {
-    font-family: 'Tangerine', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
     text-shadow: 4px 4px 4px #aaa;
     margin-top: -1rem;
 }
 
 .name {
-    font-family: 'Tangerine', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     text-shadow: 4px 4px 4px #aaa;
 }
 
 .name-home {
-    font-family: 'Tangerine', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 4rem;
     text-shadow: 4px 4px 4px #aaa;
 }
@@ -84,7 +84,6 @@ body {
 }
 
 .footer {
-    background-color: #381D2A;
     flex-grow: 1;
     /* position: fixed;
     left: 0;
@@ -113,25 +112,23 @@ body {
     height: 0.5rem;
 }
 
-.bg-olive {
-    background-color: #AABD8C;
+.bg-primary {
+    background-color: #70587C !important;
 }
 
-.bg-purple {
-    background-color: #381D2A;
+.bg-secondary {
+    background-color: #C8B8DB !important;
 }
 
-.bg-orange {
-    background-color: #F39B6D;
+.text-primary {
+    color: #70587C !important;
 }
 
-.text-olive {
-    color: #AABD8C !important;
+.text-secondary {
+    color: #C8B8DB !important;
 }
 
-.text-purple {
-    color: #381D2A;
-}
+
 
 .topnav {
     overflow: hidden;
@@ -157,8 +154,8 @@ position: fixed;
 z-index: 1;
 top: 3.5rem;
 left: 0;
-background-color: rgb(56,29,42);
-background-color: rgba(56,29,42,0.95);
+background-color: rgb(112,88,124);
+background-color: rgba(112,88,124,0.95);
 overflow-y: hidden;
 transition: 0.5s;
 }

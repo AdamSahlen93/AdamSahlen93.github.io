@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="/css/queries.css">
     <link rel="icon" class="fa-solid fa-house">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,14 +44,14 @@
     </header>
 
       <!-- HEADER PC-->
-    <header class="header-pc w-100">
+    <!-- <header class="header-pc w-100">
         <nav class="d-flex flex-row justify-content-center nav-text">
             <div><i id="home_button" class="fa-solid fa-house fa-xs text-decoration-none mx-3 pointer" onclick="showText1()"></i></div>
             <a id="about_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText2()">Om mig</a>
             <a id="stack_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText3()">Kunskaper</a>
             <a id="education_button" class="d-flex text-decoration-none mx-3 pointer" onclick="showText4()">Utbildning</a>
         </nav>
-    </header>
+    </header> -->
    
 
     <!-- MAIN CONTENT -->
@@ -70,7 +74,7 @@
             <div class="about-container d-flex flex-column align-items-center justify-content-center mt-3">
                 <img class="profile-picture-home mb-3 mx-2" src="/resources/Profilbild.jpg" alt="Profile-Picture">
                 <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center">
-                    <!-- <div class="xl-line bg-olive mt-2 mx-5"></div>     -->
+                    <!-- <div class="xl-line bg-secondary mt-2 mx-5"></div>     -->
                     <p class="d-flex pt-2 about-me-text">
                         Mitt namn är Adam Sahlén, jag är en junior javautvecklare bosatt i Hjärup, strax utanför lund, tillsammans med min sambo  och våra två barn. 
                         Jag har alltid tyckt om att lära mig saker och utvecklas som person, något som har gjort att jag spenderat mycket tid i skolbänken. 
@@ -82,7 +86,7 @@
                         Via EC Utbildning i Malmö har jag nu slutfört den tvååriga utbildningen ”Javautvecklare” som bäst beskrivs som en fullstackutbildning, 
                         och efter nästan 10 år av eftergymnasiala studier känner jag äntligen att jag har hittat rätt, och jag är nu redo för nya utmaningar! 
                     </p>
-                    <!-- <div class="xl-line bg-olive my-2"></div>  -->
+                    <!-- <div class="xl-line bg-secondary my-2"></div>  -->
                 </div>
             </div>
         </div>
@@ -94,7 +98,7 @@
 
                     <!-- BACKEND -->
                     <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
-                        <div class="d-flex flex-column justify-content-center align-items-center px-3  category-container bg-olive rounded-left">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3  category-container bg-secondary rounded-left">
                             <i class="d-flex mt-1 fa-solid fa-leaf text-white fa-2xl"></i> 
                             <h5 class="d-flex mt-4 text-white">Backend</h5> 
                         </div>
@@ -115,7 +119,7 @@
 
                     <!-- FRONTEND -->
                     <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
-                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-secondary rounded-left">
                             <i class="d-flex mt-1 fa-brands fa-react text-white fa-2xl"></i> 
                             <h5 class="d-flex mt-4 text-white">Frontend</h5> 
                         </div>
@@ -136,7 +140,7 @@
 
                     <!-- OTHER -->
                     <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
-                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-olive rounded-left">
+                        <div class="d-flex flex-column justify-content-center align-items-center px-3 category-container bg-secondary rounded-left">
                             <i class="d-flex fa-solid mt-1 fa-mobile-screen text-white fa-2xl"></i> 
                             <h5 class="d-flex mt-4 text-white">Övrigt</h5> 
                         </div>
@@ -169,7 +173,7 @@
                 <!-- #1 -->
                 <div onclick="openJavaDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
                  
-                        <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                        <div class="d-flex bg-secondary flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
                             <h5>Javautvecklare</h5>
                             
                         </div>
@@ -185,7 +189,7 @@
                 <!-- #2 -->
                 <div onclick="openTeacherDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
 
-                    <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                    <div class="d-flex bg-secondary flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
                         <h5>Ämneslärarutbildning</h5>
                         
                     </div>
@@ -201,7 +205,7 @@
                 <!-- #3 -->
                 <div onclick="openBiomedicineDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
 
-                    <div class="d-flex bg-olive flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
+                    <div class="d-flex bg-secondary flex-column rounded-top title-container justify-content-center align-items-center text-white py-3">
                         <h5>Biomedicin</h5>
                         
                     </div>
@@ -227,7 +231,7 @@
  
     
     <!-- Footer -->
-    <footer id="footer-home" class="footer d-flex flex-row justify-content-between text-white">
+    <footer id="footer-home" class="footer d-flex flex-row justify-content-between text-white bg-primary">
 
         <div class="d-flex flex-column pt-3 pb-1 pl-2 contacts-container">
             <div class="d-flex flex-row pb-2">
@@ -263,12 +267,12 @@
                 
                     <div class="d-flex flex-row justify-content-between">
                         <h5>Javautvecklare</h5>
-                       <button onclick="closeJavaDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                       <button onclick="closeJavaDialog()" class="x-button bg-primary border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                     </div>
                     <h6 class="d-flex">
                         Oktober 2020 – Juni 2022
                     </h6>
-                    <div class="xl-line bg-olive"></div>
+                    <div class="xl-line bg-secondary"></div>
                     <p class="d-flex">
                         Fullstackutbildning med fokus på Java och Javascript där följande kurser ingick  
                     </p>
@@ -298,12 +302,12 @@
         <dialog class="" id="teacher-dialog">
                 <div class="d-flex flex-row justify-content-between">
                     <h5>Ämneslärarutbildning</h5>
-                   <button onclick="closeTeacherDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                   <button onclick="closeTeacherDialog()" class="x-button bg-primary border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
                 <h6 class="d-flex">
                     September 2016 – Februari 2020
                 </h6>
-                <div class="xl-line bg-olive"></div>
+                <div class="xl-line bg-secondary"></div>
                 <p class="d-flex">
                     Utbildning för skolans årskurs 7-9 med ämnena matematik, teknik och biologi
                 </p>
@@ -329,12 +333,12 @@
         <dialog class="" id="biomedicine-dialog">
                 <div class="d-flex flex-row justify-content-between">
                     <h5>Biomedicin</h5>
-                   <button onclick="closeBiomedicineDialog()" class="x-button bg-purple border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
+                   <button onclick="closeBiomedicineDialog()" class="x-button bg-primary border-rounded border text-white"> <div class="d-flex flex-row"><i class="fa-solid fa-x "></i></div></button>
                 </div>
                 <h6 class="d-flex">
                     September 2012 – Maj 2015
                 </h6>
-                <div class="xl-line bg-olive"></div>
+                <div class="xl-line bg-secondary"></div>
                 <p class="d-flex">
                     Kandidatexamen med inriktning fysisk träning där allt från anatomi och fysiologi till entreprenörskap ingick
                 </p>
