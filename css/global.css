@@ -112,6 +112,11 @@ body {
     height: 0.5rem;
 }
 
+.cv-container {
+  width: 20rem;
+  height: 6rem;
+}
+
 .bg-primary {
     background-color: #08415C !important;
     /* background-color: #70587C !important; */
