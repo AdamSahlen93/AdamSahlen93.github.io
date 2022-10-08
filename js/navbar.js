@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("myNav").style.height = "14rem";
+    document.getElementById("myNav").style.height = "17rem";
   }
   
   function closeNav() {

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/stack_card.css">
     <link rel="stylesheet" href="/css/education_card.css">
     <link rel="stylesheet" href="/css/queries.css">
+    <link rel="stylesheet" href="/css/progress.css">
     <link rel="icon" class="fa-solid fa-house">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +41,7 @@
                 <a id="stack_button_dropdown" class="d-flex text-decoration-none mx-3  pointer" onclick="showText3(), navigated()">Kunskaper</a>
                 <a id="education_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText4(), navigated()">Utbildning</a>
                 <a id="cv_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText5(), navigated()">CV & Personligt brev</a>
+                <a id="progress_button_dropdown" class="d-flex text-decoration-none  mx-3 pointer" onclick="showText6(), navigated()">Min utveckling</a>
             </div>
         </div>
     </header>
@@ -60,7 +62,7 @@
 
         <!--HOME-->
         <div id="home">
-            <div class="home-direction d-flex justify-content-center align-items-center mt-5">
+            <div class="home-direction d-flex justify-content-center align-items-center">
                 
                 <div class="d-flex flex-column align-items-center mx-2">
                     <h6 class="d-flex name-home">Adam Sahlén</h6>
@@ -72,7 +74,7 @@
 
         <!--ABOUT-->
         <div id="about">
-            <div class="about-container d-flex flex-column align-items-center justify-content-center">
+            <div class="about-container d-flex flex-column align-items-center justify-content-center mx-3">
                 <img class="profile-picture-home mb-3 mx-2" src="/resources/Profilbild.jpg" alt="Profile-Picture">
                 <div class="d-flex flex-column mx-2 px-3 justify-content-center align-items-center">
                     <!-- <div class="xl-line bg-secondary mt-2 mx-5"></div>     -->
@@ -101,7 +103,7 @@
         <!--STACK-->
         <div id="stack">
                 <!-- <img class="profile-picture-pc d-flex" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
-                <div class="d-flex flex-column stack-container align-items-center mt-3">
+                <div class="d-flex flex-column stack-container align-items-center">
 
                     <!-- BACKEND -->
                     <div class="d-flex flex-row mx-2 align-items-center justify-content-around rounded mt-3 bg-white stackcard-body">
@@ -175,7 +177,7 @@
         <div id="education" >
            <div class="d-flex flex-row justify-content-center align-items-center">
             <!-- <img class="profile-picture-pc d-flex mx-5" src="/resources/Profilbild.jpg" alt="Profile-Picture"> -->
-            <div class="d-flex flex-column cards justify-content-center align-items-center mt-3">
+            <div class="d-flex flex-column cards justify-content-center align-items-center">
                     
                 <!-- #1 -->
                 <div onclick="openJavaDialog()" class="d-flex flex-column justify-content-center align-items-center rounded mb-4 pointer shadow education-card" >
@@ -231,7 +233,7 @@
     
         <!--CV-->
         <div id="cv">
-            <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="d-flex justify-content-center align-items-center">
                 
                 <div class="d-flex flex-column align-items-center mx-2 ">
                     <a class="text-decoration-none mb-4" href="/resources/AdamSahlén_CV.pdf" download="AdamSahlén_CV">
@@ -253,6 +255,90 @@
             </div>
         </div>
 
+        <!--Progress-->
+        <div id="progress">
+            <!-- PROJECT 1 -->
+            <div id="progress-container" class="d-flex flex-column">
+
+                <div class="d-flex flex-column mx-3 progress-box">
+                    <div class="d-flex flex-column mb-4 bg-white rounded justify-content-center ">
+                        <div class="d-flex justify-content-center pt-2 text-white w-100 bg-secondary rounded-top ">
+                            <h5>Utbildningens första Javaprojekt</h5>
+                        </div>
+                        <div class="d-flex flex-column bg-white justify-content-center px-2">
+                                <div class="d-flex flex-row justify-content-around pt-2">
+                                    <p class="d-flex">Under första kursen av min utbildning skapades mitt första sidoprojekt där jag ville tillämpa allt som kursen berört.</p>
+                                </div>
+                                <div id="moreMastermind">
+                                    <p class="">Detta innebar startpunkten för min kunskapsutveckling inom Java och ger en rolig tillbakablick på min resa.</p>
+                                    <a class="text-decoration-none" href="https://github.com/AdamSahlen93/Mastermind">Visa github repository</a>
+                                </div> 
+                        </div>
+                        <div class=" pr-2 pb-3 d-flex justify-content-end pointer">
+                            <i id="showMastermind" onclick="showMoreMastermind()" class="fa-solid fa-xl fa-angle-down"></i>
+                            <i id="hideMastermind" onclick="hideMoreMastermind()" class="fa-solid fa-xl fa-angle-up"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="d-flex flex-column mx-3 progress-box">
+                    <div class="d-flex flex-column  mb-4 bg-white rounded justify-content-center">
+                        <div class="d-flex justify-content-center pt-2 text-white w-100 bg-secondary rounded-top">
+                            <h5>Portfolioprojekt under utbildningen</h5>
+                        </div>
+                    <div class="d-flex flex-column bg-white justify-content-center px-2">
+                            <div class="d-flex flex-row justify-content-around pt-2">
+                                <p class="d-flex">Under kursen portfolioprojekt tilldelades ett case för ett fiktivt företag i grupp där agila arbetsmetoder användes.</p>
+                            </div>
+                            <div id="morePortfolio">
+                                <p class="">Här skapades en webbtjänst för att hantera bokningar, anställda och fakturering med hjälp utav följande tekniker och metoder:</p>
+                                <ul>
+                                    <li>Java Springboot</li>
+                                    <li>Spring Security</li>
+                                    <li>React.js</li>
+                                    <li>mySQL</li>
+                                    <li>Jira</li>
+                                    <li>Scrum</li>
+                                  </ul>
+                                <a class="text-decoration-none" href="https://gitlab.com/t3squad/t3booking">Visa gitlab repository</a>
+                            </div> 
+                    </div>
+                    <div class=" pr-2 pb-3 d-flex justify-content-end pointer">
+                            <i id="showPortfolio" onclick="showMorePortfolio()" class="fa-solid fa-xl fa-angle-down"></i>
+                            <i id="hidePortfolio" onclick="hideMorePortfolio()" class="fa-solid fa-xl fa-angle-up"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="d-flex flex-column mx-3 progress-box">
+                    <div class="d-flex flex-column  mb-4 bg-white rounded justify-content-center">
+                        <div class="d-flex justify-content-center pt-2 text-white w-100 bg-secondary rounded-top">
+                            <h5>Nuvarande arbete</h5>
+                        </div>
+                    <div class="d-flex flex-column bg-white justify-content-center px-2">
+                            <div class="d-flex flex-row justify-content-around pt-2">
+                                <p class="d-flex">För närvarande arbetar jag som fullstackutvecklare med webbtjänsten diact hos Dianovator i Malmö</p>
+                            </div>
+                            <div id="moreDiact">
+                                <p class="">Här har jag fått möjligheten att fördjupa mina kunskaper i alla de tekniker som utbildningen berört samtidigt som nya tekniker så som Redux och Webcrawling, har blivit en stor del av mina arbetsuppgifter.</p>
+                                <a class="text-decoration-none" href="https://www.diact.se/">Visa webbtjänsten diact</a>
+                            </div> 
+                    </div>
+                    <div class=" pr-2 pb-3 d-flex justify-content-end pointer">
+                            <i id="showDiact" onclick="showMoreDiact()" class="fa-solid fa-xl fa-angle-down"></i>
+                            <i id="hideDiact" onclick="hideMoreDiact()" class="fa-solid fa-xl fa-angle-up"></i> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
 </div>
                 
   
@@ -274,7 +360,7 @@
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa fa-map-marker d-flex mr-2 fa-xs mb-3"></i>
-                <p class="d-fle">Lillgränd 17b, Hjärup</p>
+                <p class="d-fle">Hjärup, Skåne</p>
             </div>
             <div class="d-flex flex-row align-items-center contacts">
                 <i class="fa-solid fa-envelope d-flex mr-2 fa-xs mb-3"></i>
@@ -405,6 +491,7 @@
     <script src="./js/DOM.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/dialog.js"></script>
+    <script src="./js/progressCard.js"></script>
  
     
 </body>
