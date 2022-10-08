@@ -30,10 +30,7 @@
         flex-direction: row !important;
     }
 
-    .education-card{
-        margin-right: 5rem !important;
-        margin-right: 5rem !important;
-    }
+
 
     .about-container {
         margin-right: 15rem !important;
@@ -58,20 +55,33 @@
     
     .name-home {
         font-size: 6rem !important;
+      
     }
     .about-container {
         flex-direction: row !important;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin-right: 2rem !important;
+        margin-left: 2rem !important;
+        margin-top: -4rem !important;
  
     }
+
+
+    #progress-container{
+        flex-direction: row !important;
+    }
+
+    .progress-box {
+        width: 30vw !important;
+    }
+ 
+ 
  
     
 
     .education-card{
         margin-right: 1rem !important;
         margin-left: 1rem !important;
-        width: 25rem !important;
+        width: 20rem !important;
     }
 
  
@@ -83,6 +93,12 @@
     .profile-picture-pc{
         display: none !important;
     }
+
+    .name-home{
+        margin-top: 4rem !important;
+    }
+
+    
 } 
 
 @media screen and (max-width: 400px) {
