@@ -94,10 +94,25 @@
         display: none !important;
     }
 
+    .box-1{
+        margin-top: 2rem !important;
+    }
+
     .name-home{
         margin-top: 4rem !important;
     }
 
+    .cv {
+        margin-top: 2rem !important;
+    }
+
+    .cards {
+        margin-top: 2rem !important;
+    }
+
+    .backend{
+        margin-top: 2rem !important;
+    }
     
 } 
 
